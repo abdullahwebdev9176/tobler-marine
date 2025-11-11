@@ -1,0 +1,123 @@
+.sports-marine-dropdown {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    max-width: 320px;
+    background: var(--white-color);
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    display: none;
+}
+
+.sports-marine-dropdown.show-mega-menu {
+    display: block;
+}
+
+.sports-marine-dropdown ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.sports-marine-dropdown ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.sports-marine-dropdown ul li a {
+    color: var(--black-color);
+}
+
+.sports-marine-dropdown ul li a:hover {
+    color: var(--black-color);
+}
+
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1500px) {
+    .header-container {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .header-container {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .desktop-header .centaral-nav-link {
+        padding: 0 9px;
+    }
+
+    .header-logo {
+        max-width: 150px;
+    }
+
+    .logo-box {
+        width: 16%;
+        padding: 20px 0;
+    }
+
+    .centaral-nav-box {
+        width: 69%;
+    }
+
+    .desktop-header .centaral-nav-link,
+    .desktop-header .left-nav-link {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-location-box p a {
+        font-size: 16px;
+    }
+
+    .header-location-box h6 {
+        font-size: 12px;
+    }
+
+    .header-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .desktop-header .centaral-nav-link,
+    .desktop-header .left-nav-link {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 500px) {}
