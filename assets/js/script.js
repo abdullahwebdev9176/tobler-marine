@@ -54,7 +54,7 @@ $(document).ready(function () {
 
 
     var closeIcon = $('.custom-toggle-icon').find('img.close-icon');
-    
+
     $(closeIcon).click(function () {
         $(this).closest(".mobile-header-list").removeClass("mobile-menu-show");
         $(".drodown-box").find('.show-mobile-menu').removeClass("show-mobile-menu");
@@ -130,6 +130,19 @@ $('.arrival-slider').owlCarousel({
         },
         1200: {
             items: 3.7
+        }
+    }
+})
+
+$('.brand-slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    center: true,
+    nav: true,
+    dots: true,
+    responsive: {
+        0: {
+            items: 1
         }
     }
 })

@@ -12,6 +12,9 @@
     --white-color: #fff;
     --gray-color: #d9d9d9;
     --lightest-gray-color: #fafafa;
+    --blue-color: #0d324f;
+    --light-blue-color: #357BFF;
+    --sky-color: #99B0FF;
 }
 
 /* Common css start here  */
@@ -65,7 +68,9 @@ ul {
     margin-bottom: 0;
 }
 
-.theme-filled-btn {
+.btn-box {}
+
+.blue-btn {
     color: var(--white-color);
     font-family: "Bai Jamjuree";
     font-size: 16px;
@@ -74,8 +79,8 @@ ul {
     line-height: 24px;
     letter-spacing: 0.8px;
     text-transform: uppercase;
-    background: var(--aqua-color);
-    border: 1px solid var(--aqua-color);
+    background: var(--light-blue-color);
+    border: 1px solid var(--light-blue-color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -84,17 +89,15 @@ ul {
     transition: all 0.5s;
     min-width: 160px;
     min-height: 40px;
-    flex-shrink: 0;
-    transform: skew(-10deg);
 }
 
-.theme-filled-btn:hover {
-    background: var(--aqua-color);
-    border: 1px solid var(--aqua-color);
+.blue-btn:hover {
+    background: var(--light-blue-color);
+    border: 1px solid var(--light-blue-color);
     color: var(--white-color);
 }
 
-.theme-outline-btn {
+.white-outline-btn {
     color: var(--white-color);
     font-family: "Bai Jamjuree";
     font-size: 16px;
@@ -113,11 +116,9 @@ ul {
     transition: all 0.5s;
     min-width: 160px;
     min-height: 40px;
-    flex-shrink: 0;
-    transform: skew(-10deg);
 }
 
-.theme-outline-btn:hover {
+.white-outline-btn:hover {
     background: var(--aqua-color);
     border: 1px solid var(--aqua-color);
     color: var(--white-color);
@@ -214,6 +215,56 @@ ul {
     line-height: 40px;
 }
 
+.bg-light-gray {
+    background: #ECEEF2;
+}
+
+.common-header {
+    position: relative;
+}
+
+.common-header::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.3;
+}
+
+.common-header-img {
+    position: relative;
+    padding-top: 45%;
+}
+
+.common-banner-content {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    z-index: 2;
+}
+
+.common-content-box {
+    width: 100%;
+    padding-left: 100px;
+}
+
+.common-header-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.common-banner-title {
+    color: var(--white-color);
+    font-size: 50px;
+}
+
 /* Common css end here  */
 
 /* desktop header css strat here */
@@ -281,7 +332,7 @@ ul {
 
 .centaral-nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin-bottom: 0;
     height: 100%;
@@ -652,7 +703,7 @@ ul {
     margin-bottom: 20px;
 }
 
-.doss-dropdown.show-mega-menu {
+.tobler-dropdown.show-mega-menu {
     display: block !important;
 }
 
@@ -1058,11 +1109,11 @@ ul {
 /* footer css start here */
 
 .newsletter {
-    background-color: var(--white-color);
+    background-color: var(--sky-color);
     text-align: center;
     color: #000;
     padding: 40px 20px;
-    border-bottom: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--sky-color);
 }
 
 footer {
@@ -1094,10 +1145,10 @@ footer {
 
 .newsletter-form {
     margin: 20px auto;
-    max-width: 350px;
-    border: 1px solid #ccc;
+    max-width: 400px;
     display: flex;
     height: 41px;
+    gap: 10px;
 }
 
 .newsletter-form input {
@@ -1105,22 +1156,31 @@ footer {
     width: calc(100% - 30px);
     height: 100%;
     outline: none;
-    background-color: transparent;
-    border: none;
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    ;
     color: var(--black-color);
     font-family: "Bai Jamjuree";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    border-radius: 5px;
 }
 
 .newsletter-form button {
     padding: 10px 15px;
-    background-color: transparent;
-    border: none;
     cursor: pointer;
     line-height: normal;
+    color: var(--white-color);
+    background: var(--light-blue-color);
+    border: 1px solid var(--light-blue-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 5px;
+
 }
 
 .social-icons a {
@@ -1148,14 +1208,14 @@ footer {
 }
 
 .footer-col-1 {
-    width: 75%;
+    width: 50%;
     display: flex;
     position: relative;
     gap: 40px;
 }
 
 .footer-col-2 {
-    width: 25%;
+    width: 50%;
 }
 
 .footer-mobile-box {
@@ -1337,14 +1397,19 @@ footer {
     border-bottom: 1px solid var(--gray-color);
 }
 
-/* hom page css start here */
+/* home page css star5t here */
 
-.home-banner {
+.tobler-container {
+    width: calc(100% - 13%);
+    margin: 0 auto;
+}
+
+.home-banner-video {
     position: relative;
     padding-top: 42%;
 }
 
-.home-banner video {
+.home-banner-video video {
     position: absolute;
     top: 0;
     left: 0;
@@ -1353,304 +1418,36 @@ footer {
     object-fit: cover;
 }
 
-.home-banner img {
+.home-banner-video::after {
     position: absolute;
-    top: 0;
+    content: '';
+    bottom: 0;
     left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(0.5);
-}
-
-.home-banner iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.5);
-}
-
-.home-banner-btn {
-    position: absolute;
-    bottom: 123px;
-    transform: translateX(-50%);
-    left: 50%;
+    z-index: 0;
 }
 
 .home-banner-content {
     position: absolute;
-    top: 50%;
+    bottom: 20%;
     left: 50%;
-    width: 100%;
-    text-align: center;
-    padding: 0 15px;
     transform: translate(-50%, -50%);
-}
-
-.banner-title {
-    color: var(--white-color);
-    font-family: "Bai Jamjuree";
-    font-size: 48px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 56px;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.banner-subtitle {
-    color: var(--white-color);
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.brand-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-left: 0;
-    max-width: 1280px;
     width: 100%;
+    z-index: 1;
+}
+
+.home-banner-title {
+    color: var(--white-color);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.banner-content-box {
+    max-width: 1000px;
     margin: 0 auto;
-}
-
-.brand-items {
-    list-style: none;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid white;
-    height: 100px;
-    background-color: black;
-}
-
-.brand-items a img {
-    padding: 17px 20px;
-    max-width: 200px;
-    width: 100%;
-}
-
-.brand-sec {
-    padding: 80px 0;
-}
-
-.arrival-slider .home-inventory-cards .inventory-card-img {
-    position: relative;
-    padding-top: 70%;
-}
-
-.arrival-slider .home-inventory-cards .inventory-card-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.boat-condition-list {
-    display: flex;
-    padding-left: 0;
-    margin-bottom: 0;
-    padding-top: 10px;
-}
-
-.specs-list-item {
-    list-style: none;
-    position: relative;
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    padding-right: 20px;
-    white-space: nowrap;
-}
-
-.specs-list-item+.specs-list-item::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: -10px;
-    transform: translate(-50%, -50%);
-    width: 1px;
-    height: 14px;
-    background: var(--gray-color);
-}
-
-.arrival-slider-sec-header {
-    margin-bottom: 40px;
-}
-
-.boat-title a {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.inventory-card-price {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-
-.arrival-slider .owl-nav {
-    display: block !important;
-}
-
-.arrival-slider .owl-nav .owl-prev {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-.arrival-slider .owl-nav .owl-next {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-
-.madis-container {
-    width: calc(100% - 19%);
-    margin: 0 auto;
-    display: flex;
-}
-
-.madis-col {
-    width: 50%;
-}
-
-.madis-col-img-box {
-    position: relative;
-    padding-top: 80%;
-}
-
-.madis-col-img-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.madis-col-content {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-    width: 100%;
-}
-
-.madis-col-content h3 {
-    color: var(--white-color);
-    font-family: "Bai Jamjuree";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-}
-
-.featured-inventory-sec {
-    padding-top: 80px;
-}
-
-.financing-sec {
-    display: flex;
-    max-width: 1400px;
-    margin: 80px auto 80px auto;
-    width: 100%;
-}
-
-.financing-col {
-    width: calc(100% / 3);
-    position: relative;
-    padding: 55px 47px;
-}
-
-.sm-financing-sec {
-    display: flex;
-    gap: 20px;
-}
-
-.financing-col-1 {
-    width: 50px;
-    height: 50px;
-    background: var(--black-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.financing-col-1 img {
-    object-fit: contain;
-}
-
-.financing-col-2 {
-    width: calc(100% - 50px);
-}
-
-.financing-col-2 h6 {
-    color: var(--black-color);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-}
-
-.financing-col-2 p {
-    margin-bottom: 0;
-}
-
-.financing-col-2 a {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.financing-col+.financing-col::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 150px;
-    background: #eee;
 }
 
 .home_services {
@@ -1664,7 +1461,7 @@ footer {
 }
 
 .lg-card-col {
-    width: calc(100% / 4 - 4px);
+    width: calc(100% / 3 - 10px);
 }
 
 .hm_serviceBox,
@@ -1686,27 +1483,38 @@ footer {
 
 .hms_title {
     position: absolute;
-    transform: translateX(-50%);
-    bottom: 50px;
-    left: 50%;
-    text-align: center;
+    top: 0;
+    left: 0;
+    text-align: left;
     width: 100%;
     padding: 10px 20px;
     color: var(--white-color);
     font-family: "Bai Jamjuree";
-    font-size: 32px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 1.6px;
     text-transform: uppercase;
     z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.hms_title img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
 }
 
 .servc_img::after {
     position: absolute;
     content: "";
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 350px;
     background: linear-gradient(180deg,
@@ -1715,1817 +1523,131 @@ footer {
     z-index: 0;
 }
 
-.doss-featured {
-    margin: 120px 0;
+.brand-slider .owl-nav {
+    display: none !important;
 }
 
-.doss-container {
-    width: calc(100% - 15%);
-    margin: 0 auto;
+.brand-slider .owl-dots {
+    margin-top: 15px;
 }
 
-.doss-featured-box {
-    display: flex;
-    margin-top: 120px;
-    margin-bottom: 120px;
+.brand-slider .item {
+    position: relative;
+    padding-top: 45%;
 }
 
-.doss-featured-col {
-    width: 50%;
-}
-
-.doss-featured-img {
-    width: 100%;
-    height: 100%;
-}
-
-.doss-featured-img>img {
+.brand-slider .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.doss-featured-col .content-box {
+.brand-logo-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: 257px;
+    width: calc(100% / 4 - 20px);
+    background: var(--white-color);
+}
+
+.brand-logo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brands-section {
+    padding-bottom: 100px;
+}
+
+.tobler-banner {
+    background-image: url('/assets/images/home/tobler-banner-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.tobler-banner::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #080821B2;
+}
+
+.tobler-banner-content {
+    max-width: calc(100% - 55%);
+    margin: 0 auto;
+    padding: 130px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.tobler-banner-content h3 {
+    color: var(--white-color);
+}
+
+.tobler-banner-content p {
+    margin: 25px;
+    color: var(--white-color);
+}
+
+
+/* gear and program page css start here */
+
+.tobler-featured-box {
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.tobler-featured-col {
+    width: 50%;
+}
+
+.tobler-featured-col .content-box {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     height: 100%;
-    max-width: 600px;
     margin: 0 auto;
+    padding-right: 47.5px;
 }
 
 .fearured-rich-text {
     margin: 40px 0;
 }
 
-.fearured-rich-text h6 {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    margin-bottom: 13px;
-}
-
-/* ---------------------------about section ------------------------- */
-.about-banner {
-    position: relative;
-    padding-top: 31%;
-    min-height: 300px;
-}
-
-.about-banner .banner-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    width: 100%;
-}
-
-.about-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--black-color);
-    opacity: 0.6;
-    z-index: 1;
-}
-
-.testimonial {
-    background-color: #111;
-    color: #fff;
-    padding: 40px 0;
-}
-
-.testimonial .fearured-title {
-    padding: 25px 0;
-    color: #fff;
-}
-
-.testimonial .fearured-title span {
-    color: #009899;
-}
-
-.testimonial .testimonial-box {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-}
-
-.testimonial .testimonial-box .testimonial-content {
-    text-align: center;
-}
-
-/* ---------------------------about section ------------------------- */
-
-/* ---------------------------type tempate section ------------------------- */
-.type-temp h1 {
-    font-family: "Bai Jamjuree";
-    font-size: 48px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 56px;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    width: 100%;
-}
-
-.type-temp h2 {
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.type-temp .fearured-rich-text {
-    margin: 20px 0;
-}
-
-.why-choose-us {
-    background: #fafafa;
-    padding: 64px 0;
-}
-
-.why-choose-us .fearured-title span {
-    color: #009899;
-}
-
-.why-choose-us .container {
-    display: flex;
-}
-
-.why-choose-us ul li {
-    padding: 40px;
-}
-
-.why-choose-us ul li h4 {
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-}
-
-.why-choose-us ul li {
-    position: relative;
-    padding-left: 60px;
-    margin-bottom: -30px;
-    list-style: none;
-}
-
-.why-choose-us ul li::before {
-    content: "";
-    position: absolute;
-    top: 21%;
-    left: 5%;
-    width: 25px;
-    height: 25px;
-    background-image: url("/assets/images/about/tick.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.Console-boat-listing {
-    padding: 64px;
-}
-
-.Console-boat-listing .fearured-title span {
-    color: #009899;
-}
-
-.Console-boat-listing .inventory-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 40px 20px;
-}
-
-.Console-boat-listing .inventory-grid .inventory-cards .inventory-card-img img {
-    width: 100%;
-}
-
-/* ---------------------------type tempate section ------------------------- */
-/* ---------------------------consignment section ------------------------- */
-
-.featured-sec .content-box h2 {
-    font-family: "Bai Jamjuree";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-}
-
-.featured-sec .content-box {
-    padding: 64px 0;
-    width: 47%;
-    margin: 0 auto;
-}
-
-.blrubsec h3 {
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    /* 140% */
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.blrubsec .blurb-btn {
-    margin: 40px 0;
-    text-align: center;
-}
-
-.Why-Consign .testimonial-box .testimonial-content {
-    text-align: left;
-}
-
-.Why-Consign .testimonial-content h4 {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    /* 150% */
-    position: relative;
-}
-
-.Why-Consign .testimonial-content h4::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -35px;
-    width: 25px;
-    height: 25px;
-    background-image: url("/assets/images/about/tick.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.Why-Consign .Why-Consign-list {
-    margin: 30px 0;
-}
-
-/* ---------------------------consignment section ------------------------- */
-
-/* service page css start here */
-
 .fixed-height-img {
     height: 100%;
-    max-height: 480px;
-    overflow: hidden;
+    max-height: 865px;
 }
 
-.dark-sec {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.dark-col {
-    width: calc(100% / 2);
-}
-
-.dark-sec-img {
+.tobler-featured-img {
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
-.dark-sec-img .dark-sec-main-img {
+.tobler-featured-img img {
+    padding-left: 47.5px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.dark-img-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 480px;
-    margin: 0 auto;
-}
-
-.dark-img-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.dark-sec-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 600px;
-}
-
-.trust-sporst-box {
-    display: flex;
-    gap: 40px;
-}
-
-.trust-sports-col ul {
-    padding-left: 0;
-}
-
-.trust-sports-col ul li {
-    list-style-type: none;
-}
-
-.dark-sec-content h3 {
-    color: var(--white-color);
-    font-family: "Bai Jamjuree";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-    margin-bottom: 64px;
-}
-
-.dark-sec-content h3 strong {
-    color: var(--aqua-color);
-}
-
-.content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--black-color);
-}
-
-.trust-sports-col li img {
-    padding-right: 16px;
-}
-
-.trust-sports-list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.trust-sports-list img {
-    width: 24px;
-    margin-top: 5px;
-    height: 24px;
-    object-fit: contain;
-    margin-right: 16px;
-}
-
-.trust-sports-list p {
-    color: var(--white-color);
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.trust-sports-list {
-    margin-bottom: 40px;
-}
-
-.service-accordion {
-    display: flex;
-    gap: 60px;
-    max-width: calc(100% - 20%);
-    margin: 0 auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.service-accordion-tabs {
-    flex-basis: 35%;
-    padding: 40px 45px 40px 45px;
-    border: 2px solid var(--black-color);
-}
-
-.service-accordion-content {
-    flex-basis: 65%;
-    position: sticky;
-    top: 100px;
-    align-self: flex-start;
-}
-
-.desktop-content {
-    display: block;
-}
-
-.accordion-tab-heading {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    margin-bottom: 42px;
-}
-
-.accordion-tab {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border: 1px solid var(--black-color);
-    background: var(--white-color);
-    padding: 15px 30px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.accordion-tab.active {
-    border: 1px solid var(--aqua-color);
-}
-
-.accordion-tab.active svg {
-    stroke: var(--aqua-color);
-}
-
-.accordion-tab h6 {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    margin: 0;
-}
-
-.accordion-tab span.fa {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--black-color);
-}
-
-.service-accordion-heading {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-
-.accordion-sub-heading {
-    color: #000;
-    font-family: "Open Sans", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 25px;
-    margin-bottom: 15px;
-}
-
-.service-accordion-list {
-    padding-left: 23px;
-}
-
-.service-accordion-list li {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.accordion-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.accordion-img {
-    width: 100%;
-    height: auto;
-}
-
-.accordion-content-box {
-    display: none;
-    padding-bottom: 40px;
-}
-
-.accordion-content-show {
-    display: block;
-}
-
-/* -----------------------contact page -------------------------------- */
-
-.cntactbanner-img {
-    position: relative;
-}
-
-.contact-form-box {
-    max-width: 680px;
-    background: #fafafa;
-    border: 1px solid #d9d9d9;
-    position: absolute;
-    right: 11%;
-    top: 20%;
-    padding: 24px;
-}
-
-.contact-form-box .form-box .form-row {
-    gap: 0;
-}
-
-.contact-form-box button {
-    border-radius: 0;
-}
-
-.contact-image img {
-    object-fit: cover;
-    height: 100%;
-}
-
-.contact-form .form-control {
-    border: 1px solid #d9d9d9;
-    border-radius: 0;
-    font-family: "Bai Jamjuree";
-    font-size: 15px;
-    padding: 24px;
-}
-
-.contact-form .form-control::placeholder {
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    opacity: 0.6;
-}
-
-.contact-info {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.contact-info .info-box p {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700 !important;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.cntctdetails {
-    text-align: center;
-    padding: 60px 0;
-}
-
-.cntctdetails h1 {
-    font-family: "Bai Jamjuree";
-    font-size: 48px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 56px;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-}
-
-.cntctdetails p {
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-/* -----------------------contact page -------------------------------- */
-
-
-/* repower page css start here */
-
-.repower-container {
-    width: calc(100% - 25%);
-    margin: 0 auto;
-}
-
-.repower-box {
-    padding: 64px 0 0 0 !important;
-}
-
-.repower-items-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.repower-featured-box {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-.repower-item {
-    width: calc(100% / 4);
-    padding: 20px;
-}
-
-.motorsImageWrap {
-    overflow: hidden;
-    position: relative;
-    padding-top: 120%;
-}
-
-.motorsImageWrap img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.primaryBlackHeading {
-    color: var(--black-color);
-    text-align: center;
-    font-family: "Bai Jamjuree";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-    padding-top: 50px;
-}
-
-.headingWrap {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.outboardMotorsSection {
-    padding-bottom: 80px;
-}
-
-.motorTextWrap {
-    margin-top: 16px;
-}
-
-.motorsCardTitle {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.motorsCardPrice {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.contact-form-box .form-box .form-row {
-    gap: 0;
-}
-
-/* area we serve page css start here */
-
-.central-subtitle {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 24px 0;
-}
-
-.central-subtitle span {
-    color: var(--aqua-color);
-}
-
-.btn-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.events-title a {
-    display: block;
-    color: var(--black-color);
-    text-align: center;
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.events-title a:hover {
-    color: var(--black-color);
-}
-
-.event-excerpt {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    margin-top: 16px;
-    margin-bottom: 40px;
-}
-
-.events-image {
-    position: relative;
-    padding-top: 60%;
-}
-
-.events-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.events-body {
-    padding: 16px;
-}
-
-.events-central-text {
-    padding-bottom: 64px;
-}
-
-.events-sec {
-    padding-bottom: 120px;
-}
-
-/* ----------------------------seasonal services ----------------------------- */
-.Winterization-Services .doss-featured-col {
-    background-color: black;
-    color: #fff;
-}
-
-.Winterization-Services .doss-featured-col .content-box h3 {
-    color: #009899 !important;
-}
-
-.Winterization-Services .doss-featured-col .content-box h4 {
-    font-family: "Bai Jamjuree";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    padding: 15px 0;
-    margin: 0;
-    color: #fff;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-}
-
-.Winterization-Services-list {
-    padding: 20px 0;
-}
-
-.Winterization-Services-list strong {
-    padding: 10px;
-}
-
-.checkservices {
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-    padding: 60px 0;
-}
-
-.checkservices .fearured-title {
-    color: #000;
-    text-align: center;
-}
-
-.checkservices .checkservices-list .checkservices-content {
-    padding: 40px 0;
-}
-
-.Winterization-Services .doss-featured-col {
-    background: #009899;
-    color: #fff;
-}
-
-.Winterization-Services .doss-featured-col .content-box .fearured-title {
-    color: #fff !important;
-}
-
-.Winterization-Services .doss-featured-col .content-box .theme-btn {
-    color: #fff !important;
-    border: 1px solid #fff;
-}
-
-/* ----------------------------seasonal services ----------------------------- */
-
-@media (max-width: 1650px) {
-    .repower-container {
-        width: calc(100% - 18%);
-    }
-
-    .dark-sec-content {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .footer-box {
-        width: calc(100% - 10%);
-        margin: 0 auto;
-    }
-
-    .fearured-rich-text {
-        margin: 30px 0 40px 0;
-    }
-
-    .fearured-title {
-        font-size: 25px;
-        line-height: 30px;
-        letter-spacing: 1px;
-    }
-
-    .doss-featured-col .content-box {
-        max-width: 600px;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .madis-col-content h3 {
-        font-size: 30px;
-        letter-spacing: 5.4px;
-        margin-bottom: 30px;
-    }
-
-    .madis-container {
-        width: calc(100% - 12%);
-    }
-
-    .madis-col-content {
-        bottom: 50px;
-    }
-
-    .hms_title {
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .contact-form-box {
-        right: 8%;
-        top: 15%;
-    }
-
-    .contact-form-box {
-        max-width: 600px;
-    }
-}
-
-@media (max-width: 1500px) {
-    .repower-container {
-        width: calc(100% - 12%);
-    }
-
-    .repower-item {
-        padding: 10px;
-    }
-
-    .dark-sec-content h3 {
-        font-size: 25px;
-        line-height: 36px;
-        letter-spacing: 1.2px;
-        margin-bottom: 35px;
-    }
-
-    .doss-featured-box {
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
-
-    .dark-sec-content {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .banner-title {
-        font-size: 35px;
-        line-height: 41px;
-        letter-spacing: 2px;
-    }
-
-    .hms_title {
-        font-size: 23px;
-        line-height: 26px;
-    }
-
-    .financing-col-2 h6 {
-        font-size: 23px;
-        line-height: 25px;
-    }
-
-    .financing-sec {
-        margin: 75px auto 60px auto;
-        max-width: 1200px;
-    }
-
-    .financing-col {
-        width: calc(100% / 3);
-        position: relative;
-        padding: 42px 47px;
-    }
-
-    .financing-col+.financing-col::after {
-        height: 134px;
-    }
-
-    .cntctdetails h1 {
-        font-size: 35px;
-    }
-
-    .cntctdetails p {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .title-heading {
-        font-size: 35px;
-        line-height: 40px;
-        letter-spacing: 2px;
-    }
-
-    .events-sec {
-        padding-bottom: 80px;
-    }
-
-    .dark-img-logo {
-        max-width: 300px;
-    }
-
-    .service-accordion {
-        gap: 40px;
-        max-width: calc(100% - 15%);
-    }
-
-    .footer-box {
-        width: calc(100% - 5%);
-    }
-
-    .financing-col {
-        padding: 30px 47px;
-    }
-
-    .financing-col+.financing-col::after {
-        height: 119px;
-    }
-
-    .brand-sec {
-        padding: 50px 0;
-    }
-
-    .home-banner-btn {
-        bottom: 80px;
-    }
-
-    .custom-form-control {
-        padding: 12px;
-    }
-
-    .contact-form-box {
-        max-width: 550px;
-    }
-
-    .cntctdetails {
-        text-align: center;
-        padding: 30px 0;
-    }
-
-    .contact-form-box {
-        right: 7%;
-        top: 15%;
-        padding: 10px;
-        max-width: 500px;
-    }
-
-    .contact-info .info-box p {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700 !important;
-        line-height: normal;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .featured-sec .content-box {
-        width: 70%;
-    }
-
-    .service-accordion-tabs {
-        flex-basis: 34%;
-        padding: 40px 35px 40px 35px;
-    }
-
-    .service-accordion-content {
-        flex-basis: 60%;
-    }
-
-    .trust-sporst-box {
-        gap: 30px;
-    }
-
-    .doss-featured-col .content-box {
-        padding-left: 0;
-    }
-
-    .doss-container {
-        width: calc(100% - 10%);
-    }
-
-    .footer-grid {
-        padding: 60px 20px;
-    }
-
-    .footer-col-1 {
-        gap: 25px;
-    }
-
-    .hms_title {
-        font-size: 20px;
-        letter-spacing: 2.5px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    /* repower page css start here */
-
-    .repower-container {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .motorsCardTitle {
-        font-size: 18px;
-        margin-bottom: 0;
-    }
-
-    .motorsCardPrice {
-        font-size: 18px;
-    }
-
-    /* repower page css ends here */
-
-    .service-accordion {
-        max-width: calc(100% - 10%);
-    }
-
-    .financing-col-2 h6 {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .madis-container {
-        width: 100%;
-        padding: 0 30px;
-    }
-
-    .inventory-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .cntctdetails h1 {
-        font-size: 28px;
-        line-height: normal;
-    }
-
-    .cntctdetails p {
-        font-size: 12px;
-    }
-
-    .custom-form-control {
-        padding: 8px 12px;
-    }
-
-    .contact-form-box .form-title-heading {
-        font-size: 25px;
-        font-style: normal;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .cntctdetails {
-        text-align: left;
-        padding: 50px 0;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .mobile-header-list.mobile-menu-show {
-        display: block !important;
-        right: 0;
-    }
-
-    .repower-item {
-        width: calc(100% / 3);
-    }
-
-    /* service page css start here */
-
-    .accordion-content-box {
-        padding-bottom: 40px;
-        padding-top: 20px;
-    }
-
-    .accordion-content-show {
-        display: none;
-    }
-
-    .service-accordion-tabs {
-        flex-basis: 100%;
-    }
-
-    .service-accordion-content {
-        flex-basis: 100%;
-    }
-
-    .service-accordion {
-        flex-wrap: wrap;
-        padding-top: 40px;
-        padding-bottom: 0px;
-    }
-
-    .dark-col {
-        width: 100%;
-    }
-
-    .dark-sec-content {
-        max-width: 100%;
-    }
-
-    .fixed-height-img {
-        height: 100%;
-        max-height: 100%;
-    }
-
-    .reverse-col {
-        flex-flow: column-reverse !important;
-    }
-
-    .banner-title {
-        font-size: 25px;
-        line-height: 34px;
-        letter-spacing: 1.3px;
-    }
-
-    /* service page css ends here */
-
-    .footer-col-2 {
-        width: 100%;
-    }
-
-    .footer-grid {
-        flex-flow: column-reverse;
-    }
-
-    .doss-featured-img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .footer-col-1 {
-        display: none;
-    }
-
-    .footer-accordion {
-        border-top: 1px solid var(--gray-color);
-    }
-
-    .footer-mobile-box {
-        display: block;
-    }
-
-    .footer-accordion-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 28px 0;
-    }
-
-    .footer-accordion-content {
-        display: none;
-    }
-
-    .footer-accordion-header span:nth-child(1) {
-        color: var(--black-color);
-        font-family: "Bai Jamjuree";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-    }
-
-    .footer-accordion-content ul {
-        padding-left: 0;
-        margin-bottom: 0;
-        padding-top: 18px;
-        padding-bottom: 18px;
-    }
-
-    .footer-accordion-content ul li {
-        list-style: none;
-        padding: 5px 0;
-    }
-
-    .footer-accordion-content ul li a {
-        color: var(--black-color);
-        font-family: "Bai Jamjuree";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        display: block;
-    }
-
-    .footer-accordion-content .menu-logo-box {
-        padding: 0 0;
-    }
-
-    .menu-logo-box {
-        display: flex;
-        padding: 40px 38px;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .menu-logo {
-        width: 48%;
-        height: auto;
-        padding: 15px 25px;
-        border: 1px solid var(--black-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: var(--black-color);
-    }
-
-    .menu-logo img {
-        max-width: 103px;
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .footer-accordion-header span.rotate {
-        transform: rotate(180deg) !important;
-        transition: transform 0.3s ease;
-    }
-
-    .doss-featured-col .content-box {
-        padding: 50px 20px;
-        max-width: 100%;
-        text-align: left;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .doss-featured-col {
-        width: 100%;
-    }
-
-    .doss-featured-img>img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .doss-container {
-        width: 100% !important;
-        padding: 0 20px;
-    }
-
-    .doss-featured-box {
-        margin-top: 80px !important;
-        margin-bottom: 50px !important;
-        flex-direction: column;
-    }
-
-    .lg-card-col {
-        width: calc(100% / 2 - 2px);
-        margin-bottom: 4px;
-    }
-
-    .financing-sec {
-        margin: 80px auto 80px auto;
-        max-width: 1000px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .sm-financing-sec {
-        justify-content: center;
-        border-bottom: 1px solid rgba(52, 58, 64, 0.4);
-        padding: 27px;
-    }
-
-    .financing-col {
-        width: calc(100% / 1);
-        position: relative;
-        padding: 0 50px;
-    }
-
-    .madis-col-content {
-        bottom: 40px;
-    }
-
-    .madis-col {
-        width: 100%;
-    }
-
-    .madis-col-content h3 {
-        font-size: 24px;
-        letter-spacing: 4.8px;
-        margin-bottom: 24px;
-    }
-
-    .madis-container {
-        flex-direction: column;
-    }
-
-    .home-banner-btn {
-        bottom: 50px;
-    }
-
-    .doss-featured-col .content-box {
-        text-align: center;
-        align-items: center;
-    }
-
-    .Console-boat-listing {
-        padding: 15px;
-    }
-
-    .inventory-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
-    }
-
-    .doss-featured-box {
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
-        flex-direction: column;
-    }
-
-    .why-choose-us .container {
-        display: block;
-    }
-
-    .why-choose-us ul li::before {
-        top: 24%;
-        left: 3%;
-    }
-
-    .contact-form-box {
-        padding: 40px 30px;
-    }
-
-    .Why-Consign .Why-Consign-list .testimonial-content {
-        padding: 20px;
-    }
-
-    .form-container {
-        max-width: 90%;
-    }
-
-    .form-title {
-        font-size: 28px;
-        line-height: 36px;
-    }
-
-    .form-button {
-        padding: 12px 40px;
-    }
-
-    .featured-sec .content-box {
-        padding: 64px 0;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .contact-form-box {
-        right: 7%;
-        top: 15%;
-        padding: 20px;
-        max-width: 60%;
-        position: unset;
-        margin: 0 auto;
-        border: none;
-        box-shadow: 0px 0px 15px #00000036;
-    }
-
-    .cntctdetails {
-        text-align: center;
-        padding: 30px 0;
-    }
-
-    .cntctdetails h1 {
-        font-size: 30px;
-    }
-
-    .contact-form-box .form-title-heading {
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .events-sec {
-        padding-bottom: 40px;
-    }
-
-    .title-heading {
-        font-size: 28px;
-        line-height: 30px;
-        letter-spacing: 1.5px;
-    }
-
-    .central-subtitle {
-        font-size: 16px;
-        line-height: 22px;
-        letter-spacing: 1px;
-        margin: 18px 0;
-    }
-
-    .repower-item {
-        width: calc(100% / 2);
-    }
-
-    .primaryBlackHeading {
-        font-size: 25px;
-        line-height: 40px;
-        letter-spacing: 1px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    /* service page css start here */
-
-    .service-accordion-heading {
-        font-size: 25px;
-        line-height: 32px;
-        letter-spacing: 1px;
-        margin-bottom: 16px;
-    }
-
-    .doss-featured-col .content-box {
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-        align-items: center;
-    }
-
-    /* service page css start here */
-
-    /* home page css start here */
-
-    .hm_serviceBox,
-    .servc_img {
-        min-height: 300px;
-    }
-
-    .brand-items a img {
-        max-width: 135px;
-    }
-
-    .brand-items {
-        width: 200px;
-        height: 70px;
-    }
-
-    .Console-boat-listing {
-        padding: 15px;
-    }
-
-    .inventory-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-
-    .form-sec {
-        padding: 50px 0 40px 0;
-    }
-
-    .contact-section .row {
-        flex-direction: column;
-    }
-
-    .contact-image img {
-        height: 300px;
-    }
-
-    .form-input,
-    .form-textarea {
-        flex: none;
-    }
-
-    .contact-form-box {
-        padding: 20px;
-        max-width: 100%;
-        border: none;
-        box-shadow: none;
-        background: none;
-    }
-
-    .contact-info .info-box p {
-        font-size: 16px;
-    }
-
-    .checkservices .checkservices-list .checkservices-content {
-        padding: 10px 0 !important;
-    }
-
-    .checkservices {
-        padding: 20px 0 !important;
-    }
-
-    .type-temp h2 {
-        font-size: 18px;
-        line-height: normal;
-    }
-
-    .type-temp h1 {
-        font-size: 38px;
-        line-height: normal;
-    }
-
-    .doss-featured-col .content-box {
-        margin: 0 10px;
-    }
-
-    .why-choose-us {
-        padding: 20px 0;
-    }
-
-    .why-choose-us ul li {
-        padding-bottom: 10px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-
-    .repower-item {
-        width: 100%;
-        padding: 0;
-    }
-
-    /* service page css start here */
-
-    .accordion-tab {
-        padding: 15px 17px;
-    }
-
-    .accordion-tab svg {
-        width: 15px;
-    }
-
-    .service-accordion-tabs {
-        padding: 40px 20px 40px 20px;
-    }
-
-    /* service page css ends here */
-
-    /* form css start here */
-
-    .form-box .form-col {
-        width: 100%;
-    }
-
-    .form-title-heading {
-        font-size: 25px;
-        line-height: 35px;
-        letter-spacing: 1px;
-    }
-
-    .form-box .form-row {
-        gap: 0;
-    }
-
-    .form-box {
-        padding: 0 25px;
-    }
-
-    /* form css ends here */
-
-    .footer-bottom ul li {
-        font-size: 12px;
-    }
-
-    .menu-logo {
-        width: 48%;
-        height: auto;
-    }
-
-    .footer-bottom ul li a {
-        font-size: 12px;
-    }
-
-    .lg-card-col {
-        width: 100%;
-    }
-
-    .hms_title {
-        bottom: 60px;
-        color: var(--white-color);
-        font-family: "Bai Jamjuree";
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 40px;
-        letter-spacing: 1.6px;
-        text-transform: uppercase;
-    }
-
-    .financing-col {
-        width: calc(100% / 1);
-        position: relative;
-        padding: 0 20px;
-    }
-
-    .inventory-grid {
-        grid-template-columns: repeat(1, 1fr) !important;
-    }
-
-    .testimonial .testimonial-box {
-        flex-wrap: wrap;
-    }
-
-    .contact-form-box {
-        padding: 0px;
-    }
-
-    .custom-form-control:placeholder-shown {
-        font-size: 14px;
-    }
-
-    .contact-info .info-box p {
-        font-size: 14px;
-    }
-
-    .theme-btn {
-        padding: 12px !important;
-    }
-
-    .content-box {
-        padding: 10px !important;
-    }
-
-    .map-container iframe {
-        height: 350px;
-    }
-
-    .type-temp h1 {
-        font-size: 26px;
-        line-height: normal;
-    }
-
-    .type-temp h2 {
-        font-size: 16px;
-        line-height: normal;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .sub-header ul li a {
-        padding: 10px 10px;
-    }
-
-    .dropdown-header {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .mobile-nav-box ul {
-        padding-left: 30px;
-    }
-
-    .menu-logo-box {
-        padding: 40px 30px;
-    }
-
-    /* service page css start here */
-    .banner-title {
-        font-size: 21px;
-        line-height: 28px;
-        letter-spacing: 1px;
-    }
-
-    .dark-img-logo {
-        max-width: 250px;
-    }
-
-    .dark-sec-content {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .service-accordion {
-        padding-right: 15px;
-        max-width: 100%;
-        padding-left: 15px;
-    }
-
-    .trust-sporst-box {
-        gap: unset;
-        flex-wrap: wrap;
-    }
-
-    .trust-sports-list {
-        margin-bottom: 20px;
-    }
-
-    /* service page css ends here */
-}
-
-@media screen and (max-width: 450px) {
-    .btn-wrapper {
-        flex-wrap: wrap;
-    }
-
-    .events-body {
-        padding: 16px 0 !important;
-    }
-
-    .footer-bottom ul {
-        flex-direction: column;
-        padding: 15px 0 20px 0;
-    }
-
-    .bottom-links+.bottom-links::after {
-        display: none;
-    }
-
-    .footer-bottom ul li {
-        padding: 3px 15px;
-    }
-
-    .hms_title {
-        bottom: 30px;
-        font-size: 25px;
-        line-height: 34px;
-    }
-
-    .brand-sec {
-        padding: 40px 0;
-    }
-
-    .brand-items a img {
-        max-width: 125px;
-    }
-
-    .brand-items {
-        width: 150px;
-        height: 62px;
-    }
 }
