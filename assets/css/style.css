@@ -1,9 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Söhne Breit";
+    src: url("/assets/fonts/sohn-font/OTF/SöhneBreit-Halbfett.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: 'sohn-kraft';
+    src: url("/assets/fonts/sohn-font/OTF/SöhneBreit-Kräftig.otf")
 }
 
 :root {
@@ -15,6 +26,11 @@
     --blue-color: #0d324f;
     --light-blue-color: #357BFF;
     --sky-color: #99B0FF;
+    --Text-Secondary-title: #F6F6F8;
+    --font-family-title: 'Söhne Breit';
+    --dark-blue-color: #0F0F31;
+    --border-radius: 8px;
+    --blue-banner-bg: #080821;
 }
 
 /* Common css start here  */
@@ -60,68 +76,77 @@ a:hover {
 
 p {
     margin-bottom: 0;
-    font-family: "Bai Jamjuree", sans-serif;
     font-weight: 400;
+    font-family: Figtree;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
 }
 
 ul {
     margin-bottom: 0;
 }
 
-.btn-box {}
+.btn-box {
+    display: flex;
+    gap: 13px;
+}
 
 .blue-btn {
     color: var(--white-color);
-    font-family: "Bai Jamjuree";
+    color: var(--Text-Secondary-title);
+    font-family: var(--font-family-title);
     font-size: 16px;
-    font-style: italic;
-    font-weight: 700;
+    font-style: normal;
+    font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.8px;
     text-transform: uppercase;
-    background: var(--light-blue-color);
-    border: 1px solid var(--light-blue-color);
+    background: var(--dark-blue-color);
+    border: 1px solid var(--dark-blue-color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 37px;
+    padding: 24px;
     text-decoration: none;
     transition: all 0.5s;
     min-width: 160px;
     min-height: 40px;
+    border-radius: var(--border-radius);
 }
 
 .blue-btn:hover {
     background: var(--light-blue-color);
     border: 1px solid var(--light-blue-color);
-    color: var(--white-color);
+    color: var(--Text-Secondary-title);
 }
 
-.white-outline-btn {
+.light-blue-btn {
     color: var(--white-color);
-    font-family: "Bai Jamjuree";
+    color: var(--Text-Secondary-title);
+    font-family: var(--font-family-title);
     font-size: 16px;
-    font-style: italic;
-    font-weight: 700;
+    font-style: normal;
+    font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.8px;
     text-transform: uppercase;
-    background: transparent;
-    border: 1px solid var(--aqua-color);
+    background: var(--light-blue-color);
+    border: 1px solid var(--light-blue-color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 37px;
+    padding: 24px;
     text-decoration: none;
     transition: all 0.5s;
     min-width: 160px;
     min-height: 40px;
+    border-radius: var(--border-radius);
 }
 
-.white-outline-btn:hover {
-    background: var(--aqua-color);
-    border: 1px solid var(--aqua-color);
-    color: var(--white-color);
+.light-blue-btn:hover {
+    background: #1a1a8b;
+    border: 1px solid #1a1a8b;
+    color: var(--Text-Secondary-title);
 }
 
 .theme-btn {
@@ -173,14 +198,13 @@ ul {
     text-transform: uppercase;
 }
 
-.fearured-title {
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 32px;
+.featured-title {
+    color: var(--dark-blue-color);
+    font-family: var(--font-family-title);
+    font-size: 48px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 1.6px;
+    font-weight: 400;
+    line-height: 52.8px;
     text-transform: uppercase;
     margin-bottom: 0;
 }
@@ -194,6 +218,53 @@ ul {
     line-height: 56px;
     letter-spacing: 2.4px;
     text-transform: uppercase;
+}
+
+.tobler-featured-box {
+    display: flex;
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.tobler-featured-col {
+    width: 50%;
+}
+
+.tobler-featured-col .content-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.fearured-rich-text {
+    margin: 20px 0 40px 0;
+}
+
+.fixed-height-img {
+    height: 100%;
+    min-height: 864px;
+}
+
+.tobler-featured-img {
+    width: 100%;
+    height: 100%;
+}
+
+.fp-l {
+    padding-left: 47.5px;
+}
+
+.fp-r {
+    padding-right: 47.5px;
+}
+
+.tobler-featured-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .title-heading {
@@ -230,8 +301,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: black;
-    opacity: 0.3;
+    background: linear-gradient(180deg, rgba(8, 8, 33, 0.00) 0%, rgba(8, 8, 33, 0.65) 50%, #080821 100%);
 }
 
 .common-header-img {
@@ -262,8 +332,61 @@ ul {
 
 .common-banner-title {
     color: var(--white-color);
-    font-size: 50px;
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-Heading-1, 96px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-Heading-1, 96px);
+    text-transform: uppercase;
 }
+
+.common-blue-banner {
+    background: var(--blue-banner-bg);
+    padding: 148px 15px;
+}
+
+.blue-banner-content-box {
+    width: calc(100% - 47%);
+    margin: 0 auto;
+}
+
+.blue-sm-title {
+    color: var(--Text-Secondary-title);
+    font-family: Figtree;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+.bottom-banner-title {
+    color: var(--white-color);
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-Heading-1, 96px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-Heading-1, 96px);
+    text-transform: uppercase;
+}
+
+.bottom-blue-banner {
+    background: var(--blue-banner-bg);
+    padding: 148px 15px;
+}
+
+.bottom-blue-banner-content-box {
+    width: calc(100% - 47%);
+    margin: 0 auto;
+}
+
+.bottom-banner-title {
+    font-family: var(--font-family-title);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52.8px; 
+    text-transform: uppercase;
+}
+
 
 /* Common css end here  */
 
@@ -1610,44 +1733,3 @@ footer {
 
 
 /* gear and program page css start here */
-
-.tobler-featured-box {
-    display: flex;
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
-.tobler-featured-col {
-    width: 50%;
-}
-
-.tobler-featured-col .content-box {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 100%;
-    margin: 0 auto;
-    padding-right: 47.5px;
-}
-
-.fearured-rich-text {
-    margin: 40px 0;
-}
-
-.fixed-height-img {
-    height: 100%;
-    max-height: 865px;
-}
-
-.tobler-featured-img {
-    width: 100%;
-    height: 100%;
-}
-
-.tobler-featured-img img {
-    padding-left: 47.5px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
