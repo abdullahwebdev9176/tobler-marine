@@ -239,7 +239,9 @@ ul {
 .fearured-rich-text {
     margin: 20px 0 40px 0;
 }
-
+.fearured-rich-text strong{
+    font-weight: 700;
+}
 .storage-featured-img {
     width: 100%;
     height: 100%;
@@ -432,7 +434,9 @@ ul {
     width: calc(100% - 47%);
     margin: 0 auto;
 }
-
+.bottom-blue-banner-content-box strong{
+    font-weight: 700 !important;
+}
 .bottom-banner-title {
     font-family: var(--font-family-title);
     font-size: 48px;
