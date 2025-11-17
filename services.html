@@ -327,8 +327,8 @@
                         <div class="sm-form-row">
                             <div class="form-group sm-form-col">
                                 <label for="pick-up-date" class="sr-only">Pick up Date</label>
-                                <input type="number" name="pick-up-date" id="pick-up-date"
-                                    placeholder="Pick up Date *" class="custom-form-control require_check">
+                                <input type="number" name="pick-up-date" id="pick-up-date" placeholder="Pick up Date *"
+                                    class="custom-form-control require_check">
                                 <div class="field-error" id="error_pick-up-date"></div>
                             </div>
 
@@ -358,8 +358,30 @@
                 <div class="form-row">
                     <div class="w-100 mb-3">
                         <label for="comments" class="sr-only">Comments</label>
-                        <textarea name="comments" id="comments" rows="5" class="custom-textarea require_check"></textarea>
+                        <textarea name="comments" id="comments" rows="5" class="custom-textarea require_check"
+                            placeholder="Comments"></textarea>
                         <div class="field-error" id="error_comments"></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="radio-wrapper">
+                        <div class="preferred-contact-method-title">Preferred Contact Method</div>
+
+                        <label for="method-email">
+                            <input type="radio" id="method-email" name="preferred_contact" value="email">
+                            Email
+                        </label>
+
+                        <label for="method-phone">
+                            <input type="radio" id="method-phone" name="preferred_contact" value="phone">
+                            Phone
+                        </label>
+
+                        <label for="method-text">
+                            <input type="radio" id="method-text" name="preferred_contact" value="text">
+                            Text
+                        </label>
                     </div>
                 </div>
 
