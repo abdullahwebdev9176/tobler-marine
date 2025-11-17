@@ -1233,7 +1233,7 @@ ul {
     background-color: var(--sky-color);
     text-align: center;
     color: #000;
-    padding: 40px 20px;
+    padding: 148px 20px;
     border-bottom: 1px solid var(--sky-color);
 }
 
@@ -1241,47 +1241,49 @@ footer {
     background-color: var(--white-color);
 }
 
+.newsletter-box {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .newsletter h2 {
-    color: var(--black-color);
+    color: var(--dark-blue-color);
     text-align: center;
-    font-family: "Bai Jamjuree";
-    font-size: 32px;
+    font-family: var(--font-family-title);
+    font-size: 40px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 1.6px;
+    font-weight: 400;
+    line-height: 48px;
     text-transform: uppercase;
 }
 
 .newsletter p {
-    color: var(--black-color);
+    color: var(--dark-blue-color);
     text-align: center;
-    font-family: "Bai Jamjuree";
+    font-family: Figtree;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px;
-    margin-bottom: 46px;
 }
 
 .newsletter-form {
-    margin: 20px auto;
+    margin: 20px auto 20px auto;
     max-width: 400px;
     display: flex;
-    height: 41px;
+    height: 56px;
     gap: 10px;
 }
 
 .newsletter-form input {
-    padding: 10px;
+    padding: 10px 15px;
     width: calc(100% - 30px);
     height: 100%;
     outline: none;
     background-color: var(--white-color);
     border: 1px solid var(--white-color);
-    ;
     color: var(--black-color);
-    font-family: "Bai Jamjuree";
+    font-family: Figtree;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1290,17 +1292,22 @@ footer {
 }
 
 .newsletter-form button {
-    padding: 10px 15px;
+    padding: 16px 30px;
     cursor: pointer;
-    line-height: normal;
-    color: var(--white-color);
-    background: var(--light-blue-color);
-    border: 1px solid var(--light-blue-color);
+    color: #F6F6F8;
+    font-family: var(--font-family-title);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
     border-radius: 5px;
+    background: var(--light-blue-color);
+    border: 1px solid var(--light-blue-color);
 
 }
 
@@ -1318,14 +1325,17 @@ footer {
 }
 
 .footer-box {
-    width: calc(100% - 15%);
+    width: 100%;
+    padding-left: 96px;
+    padding-right: 96px;
     margin: 0 auto;
+    background: var(--dark-blue-color);
 }
 
 .footer-grid {
     display: flex;
     gap: 40px;
-    padding: 60px 40px;
+    padding: 60px 0;
 }
 
 .footer-col-1 {
@@ -1349,13 +1359,12 @@ footer {
 
 .footer-column h4,
 .footer-column h3 {
-    color: var(--aqua-color);
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.8px;
+    color: var(--light-blue-color);
+    font-family: var(--font-family-title);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
     text-transform: uppercase;
     margin-bottom: 10px;
     letter-spacing: 1px;
@@ -1370,7 +1379,7 @@ footer {
 
 .footer-column ul li {
     cursor: pointer;
-    padding: 16px 0;
+    padding: 12px 0;
 }
 
 .footer-column ul li a {
@@ -1378,32 +1387,18 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
+    color: var(--gray-color);
+    font-family: var(--font-family-title);
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-}
-
-.arrow-link {
-    border-bottom: 1px solid var(--gray-color);
-}
-
-.footer-col-1::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: 1px;
-    height: 300px;
-    background: var(--gray-color);
+    line-height: 18px;
 }
 
 .footer-logo {
     max-width: 315px;
     width: 100%;
-    margin: 0 auto 33px auto;
+    margin: auto 0 0 0;
 }
 
 .footer-logo img {
@@ -1436,8 +1431,11 @@ footer {
 }
 
 .footer-container {
-    width: calc(100% - 15%);
+    width: calc(100% - 20%);
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-bottom ul {
@@ -1452,7 +1450,7 @@ footer {
     padding: 0 15px;
     color: #d3d3d3b8;
     text-align: center;
-    font-family: Gantari;
+    font-family: Figtree;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1465,33 +1463,40 @@ footer {
     top: 50%;
     left: 0;
     width: 1px;
-    height: 15px;
-    background: var(--black-color);
-    opacity: 0.5;
+    height: 12px;
+    background: var(--gray-color);
     transform: translateY(-46%);
+}
+
+.footer-bottom p,
+.footer-bottom p a {
+    color: var(--Text-Secondary-title);
+    font-size: 12px;
+    font-style: normal;
+    font-family: Figtree;
+    font-weight: 300;
+    line-height: 18px;
 }
 
 .footer-bottom ul li {
     list-style: none;
-    color: var(--black-color);
-    opacity: 0.5;
-    text-align: center;
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
+    color: var(--Text-Secondary-title);
+    font-size: 12px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    padding: 10px 15px;
+    font-family: Figtree;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 10px 0;
 }
 
 .footer-bottom ul li a {
-    color: var(--black-color);
-    text-align: center;
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
+    color: var(--Text-Secondary-title);
+    font-size: 12px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
+    font-family: Figtree;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 10px 7px;
 }
 
 .recaptcha-disclaimer {
@@ -1503,7 +1508,9 @@ footer {
 }
 
 .footer-bottom {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    background: #586173;
+    padding-top: 10px;
 }
 
 .locations {
@@ -1516,6 +1523,38 @@ footer {
 
 .last-accordion {
     border-bottom: 1px solid var(--gray-color);
+}
+
+.footer-address-box {
+    margin-bottom: 30px;
+}
+
+.footer-address-box h6 {
+    color: var(--gray-color);
+    font-family: var(--font-family-title);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.footer-address-box p {
+    color: var(--gray-color);
+    font-family: var(--font-family-title);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.footer-address-box a {
+    color: var(--white-color);
+    font-family: var(--font-family-title);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
 }
 
 /* home page css star5t here */
@@ -1641,14 +1680,17 @@ footer {
     font-weight: 300;
     line-height: 28px;
 }
-.home-blue-banner-content-box{
-        width: calc(100% - 40%);
-        margin: 0 auto;
+
+.home-blue-banner-content-box {
+    width: calc(100% - 40%);
+    margin: 0 auto;
 }
-.explore-sec{
+
+.explore-sec {
     padding: 148px 0;
 }
-.home-section-title-heading{
+
+.home-section-title-heading {
     color: var(--black-color);
     text-align: center;
     font-family: var(--font-family-title);
@@ -1778,7 +1820,7 @@ footer {
 }
 
 .brands-section {
-    padding: 148px 0; 
+    padding: 148px 0;
 }
 
 .tobler-banner {
