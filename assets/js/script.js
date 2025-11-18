@@ -146,3 +146,17 @@ $('.brand-slider').owlCarousel({
         }
     }
 })
+//faq accordion on frontpage
+ if ($('.custom-accordion-header').length) {
+        $(".custom-accordion-header").click(function () {
+            if ($(this).find("span.fa").hasClass("fa-angle-down")) {
+                $(".custom-accordion").find(".content-show").slideUp().removeClass("content-show");
+                $(".custom-accordion").find(".fa-angle-up").removeClass("fa-angle-up").addClass("fa-angle-down");
+                $(this).find("span.fa").removeClass("fa-angle-down").addClass("fa-angle-up");
+                $(this).next(".custom-accordion-body").slideDown().addClass("content-show");
+            } else if ($(this).find("span.fa").hasClass("fa-angle-up")) {
+                $(this).find("span.fa").removeClass("fa-angle-up").addClass("fa-angle-down");
+                $(this).next(".custom-accordion-body").slideUp().removeClass("content-show");
+            }
+        });
+    }

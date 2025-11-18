@@ -13,8 +13,13 @@
 
 
 @font-face {
-    font-family: 'sohn-kraft';
+    font-family: 'SöhneBreit-Kräftig';
     src: url("/assets/fonts/sohn-font/OTF/SöhneBreit-Kräftig.otf")
+}
+
+@font-face {
+    font-family: 'Söhne';
+    src: url("/assets/fonts/Söhne/TestSohne-Dreiviertelfett.otf")
 }
 
 :root {
@@ -31,6 +36,7 @@
     --border-radius: 8px;
     --blue-banner-bg: #080821;
     --Text-Secondary-darker: #3A404D;
+    --font-family-Body: 'Söhne';
 }
 
 /* Common css start here  */
@@ -448,6 +454,58 @@ ul {
     font-weight: 400;
     line-height: 52.8px;
     text-transform: uppercase;
+}
+
+.accordion-sec {
+    padding: 148px 15px;
+    background: #AEB6C7;
+}
+
+.accordon-wrapper {
+    max-width: calc(100% - 60%);
+    margin: 0 auto;
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    padding: 48px;
+}
+
+.accordion-card {
+    padding: 20px 0;
+    margin: 7px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.custom-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-accordion-header h3 {
+    color: var(--dark-blue-color);
+    font-family: Söhne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.custom-accordion-header span.fa {
+    font-size: 23px;
+}
+
+.content-show {
+    display: block !important;
+}
+
+.custom-accordion-body p {
+    color: var(--dark-blue-color);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
 }
 
 /* Common css end here  */
@@ -2009,7 +2067,8 @@ footer {
     font-weight: 300;
     line-height: 28px;
 }
-.fiber-glass-slider-wrapper{
+
+.fiber-glass-slider-wrapper {
     max-width: calc(100% - 25%);
     margin: 0 auto;
 }
