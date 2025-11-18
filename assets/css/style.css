@@ -402,6 +402,8 @@ ul {
     font-weight: 400;
     line-height: var(--font-line-height-Heading-1, 96px);
     text-transform: uppercase;
+    border-bottom: 3px solid #357BFF;
+    padding-bottom: 5px;
 }
 
 .common-blue-banner {
