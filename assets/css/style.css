@@ -2176,6 +2176,34 @@ footer {
 
 /* --------------------------canvas page --------------------------------- */
 
+/* --------------------------parts page --------------------------------- */
+    .toblerbrandsec .feature-card img{
+        width: 250px;
+        height: 100px;
+        object-fit: contain;
+    }
+    .toblerbrandsec .feature-card p{
+        color: var(--Text-Secondary-dark,);
+        text-align: center;
+        font-family: Figtree;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+    }
+    .toblerbrandsec  .feature-card {
+    background-color: #fff;
+    border: 2px solid #D6DAE3;
+    border-radius: 8px;
+    height: 400px !important;
+    display: flex;
+    box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.05);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* --------------------------parts page --------------------------------- */
+
 @media screen and (max-width: 991px) {
 
     .feature-row {
