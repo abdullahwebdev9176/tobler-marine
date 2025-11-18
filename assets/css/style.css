@@ -962,7 +962,17 @@ ul {
 }
 
 /* form css start here */
+.iti {
+    border: 1px solid #dedfe0;
+    width: 100%;
+}
 
+.phoneInput {
+    width: 100%;
+    padding-left: 40px;
+    outline: none;
+    border: none;
+}
 .form-sec {
     padding: 148px 15px;
     position: relative;
