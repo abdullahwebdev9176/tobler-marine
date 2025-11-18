@@ -39,8 +39,22 @@
     --font-family-Body: 'Söhne';
 }
 
+.location-address-box a {
+    color: var(--Text-Primary-highlight);
+}
 
+.location-address-box a:hover {
+    color: var(--Text-Primary-highlight);
+}
 
+.featured-subtitle {
+    color: var(--Text-Primary-highlight);
+    font-family: var(--font-family-Body);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
 
 
 
