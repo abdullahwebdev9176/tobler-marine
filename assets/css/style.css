@@ -416,7 +416,7 @@ ul {
 
 .blue-sm-title {
     color: var(--Text-Secondary-title);
-    font-family: Figtree;
+    font-family: var(--font-family-Body);
     font-size: 42px;
     font-style: normal;
     font-weight: 700;
@@ -455,7 +455,17 @@ ul {
     line-height: 52.8px;
     text-transform: uppercase;
 }
+.accordion-title{
+    color: var(--Text-Primary-highlight);
+    font-family: var(--font-family-title);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 
+}
 .accordion-sec {
     padding: 148px 15px;
     background: #AEB6C7;
@@ -2071,4 +2081,21 @@ footer {
 .fiber-glass-slider-wrapper {
     max-width: calc(100% - 25%);
     margin: 0 auto;
+}
+
+.location-address-box a {
+    color: var(--Text-Primary-highlight);
+}
+
+.location-address-box a:hover {
+    color: var(--Text-Primary-highlight);
+}
+
+.featured-subtitle {
+    color: var(--Text-Primary-highlight);
+    font-family: var(--font-family-Body);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
 }
