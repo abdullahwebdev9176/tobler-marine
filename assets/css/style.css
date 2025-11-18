@@ -1071,7 +1071,7 @@ ul {
 }
 
 .radio-wrapper label {
-    margin-right: 15px;
+    margin-right: 10px;
     margin-bottom: 0;
 }
 
@@ -1121,6 +1121,132 @@ ul {
 .form-box .sm-form-row {
     gap: 4px;
     display: flex;
+}
+
+
+/* custom radio button css start here */
+
+.custom-radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin-top: 10px;
+}
+
+.custom-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #3d4a5c;
+    user-select: none;
+}
+
+.custom-radio input {
+    display: none;
+}
+
+/* Square radio */
+.custom-radio .checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #b9c2d0;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+    position: relative;
+    background: var(--white-color);
+}
+
+/* Active state */
+.custom-radio input:checked+.checkmark {
+    background-color: #4c8bf5;
+    border-color: #4c8bf5;
+}
+
+/* Check icon */
+.custom-radio .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 4.5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.custom-radio input:checked+.checkmark::after {
+    opacity: 1;
+}
+
+/* custom checkboxes css start here */
+
+.options-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.options-grid>* {
+    flex: 0 0 calc(25% - 22px);
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #3d4a5c;
+    user-select: none;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+/* Square box */
+.custom-checkbox .checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #b9c2d0;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    position: relative;
+    background: var(--white-color);
+}
+
+/* When checked */
+.custom-checkbox input:checked+.checkmark {
+    background-color: #4c8bf5;
+    border-color: #4c8bf5;
+}
+
+/* Checkmark icon */
+.custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 4.5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.custom-checkbox input:checked+.checkmark::after {
+    opacity: 1;
 }
 
 /* mobile header start here */
@@ -2180,21 +2306,23 @@ footer {
 /* --------------------------canvas page --------------------------------- */
 
 /* --------------------------parts page --------------------------------- */
-    .toblerbrandsec .feature-card img{
-        width: 250px;
-        height: 100px;
-        object-fit: contain;
-    }
-    .toblerbrandsec .feature-card p{
-        color: var(--Text-Secondary-dark,);
-        text-align: center;
-        font-family: Figtree;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 18px;
-    }
-    .toblerbrandsec  .feature-card {
+.toblerbrandsec .feature-card img {
+    width: 250px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.toblerbrandsec .feature-card p {
+    color: var(--Text-Secondary-dark, );
+    text-align: center;
+    font-family: Figtree;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.toblerbrandsec .feature-card {
     background-color: #fff;
     border: 2px solid #D6DAE3;
     border-radius: 8px;
@@ -2205,10 +2333,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 /* --------------------------parts page --------------------------------- */
 
 /* --------------------------staff page --------------------------------- */
-.prostaffpartners .card{
+.prostaffpartners .card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2216,27 +2345,45 @@ footer {
     border: 2px solid #D6DAE3 !important;
     min-height: 250px;
 }
+
 .prostaffpartners .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
+
 /* --------------------------staff page --------------------------------- */
 
 /* financing page css start here */
 
-.financing-banner-video{
+.financing-banner-video {
     position: relative;
     padding-top: 56%;
 }
-.financing-banner-video video{
+
+.financing-banner-video video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/*  value your boat css start here  */
+
+.ordered-list {
+    padding-left: 20px;
+}
+
+.ordered-list li {
+    margin-bottom: 10px;
+    color: var(--Text-Primary-highlight);
+    font-family: Figtree;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
 }
 @media screen and (max-width: 991px) {
 
