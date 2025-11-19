@@ -1167,6 +1167,9 @@ ul {
 .form-box .form-col {
     width: calc(50% - 2px);
 }
+.loan-calculator-form .form-box .form-col {
+    width: calc(33% - 2px);
+}
 
 .form-box .form-row {
     gap: 4px;
