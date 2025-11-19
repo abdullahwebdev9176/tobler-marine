@@ -2478,6 +2478,97 @@ footer {
 
 /* --------------------------winterization page --------------------------------- */
 
+/* --------------------------winterization/summerization booking page --------------------------------- */
+
+.winterization-booking{
+    padding: 100px;
+}
+.winterization-booking h2{
+    color:  #03236B;
+    font-family: 'Söhne';
+    font-size:  16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height:  24px;
+}
+.winterization-booking h1{
+    color:  #3A404D;
+    font-family: "Söhne Breit";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52.8px; 
+    text-transform: uppercase;
+}
+.booking-details{
+    width: calc(100% - 71.6%);
+    margin: 0 auto;
+}
+.booking-details h3{
+    color: #0F0F31;
+    font-family: "Söhne Breit";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  38.4px; 
+    text-transform: uppercase;
+}
+.booking-details label{
+    color:  #0F0F31;
+    font-family: var(--font-family-Body);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 5px 0;
+}
+.booking-details p{
+    color:  #0F0F31;
+    font-size: 16px;
+    font-style: normal;
+    padding-left: 20px;
+}
+.booking-details .section-card {
+    background: #fff;
+    border: 2px solid #D6DAE3;
+    border-radius: 8px;
+    padding: 40px;    
+    /* margin-bottom: 35px; */
+}
+.booking-details .section-card ul li strong{
+    font-weight: 700;
+}
+.booking-details .section-card ul{
+    padding-left: 25px;
+}
+.booking-details .deliverysuccess ul{
+    padding-left: 0px;
+}
+.booking-details .section-card input{
+    margin-right: 5px;
+}
+.booking-details .section-card ul li{
+    color:  #0F0F31;
+    font-size: 16px;
+    font-style: normal;
+    list-style: none;
+    /* padding: 0 20px; */
+}
+.booking-details hr {
+    margin: 25px 0;
+}
+.form-winterization label{
+    color:  #0F0F31;
+    text-align: center;
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height:  24px; 
+}
+
+/* --------------------------winterization/summerization booking page --------------------------------- */
+
 /* financing page css start here */
 
 .financing-banner-video {
