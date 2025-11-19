@@ -1,16 +1,17 @@
 
 $(".toggle-menu").click(function () {
-    var menuTitle = $(this).attr("data-title");
-    var menuId = "#" + menuTitle;
+    var menuId = "#" + $(this).data("title");
+    var targetMenu = $(menuId);
 
-    $(this).closest(".mega-menu-wrapper").find(".show-mega-menu").removeClass("show-mega-menu");
-    $(menuId).toggleClass("show-mega-menu");
+    var isAlreadyOpen = targetMenu.hasClass("show-mega-menu");
+
+    $(".mega-menu-wrapper .mega-menu-box").removeClass("show-mega-menu");
+
+    if (!isAlreadyOpen) {
+        targetMenu.addClass("show-mega-menu");
+    }
 });
 
-
-$(".close-mega-menu").click(function () {
-    $(this).closest('.mega-menu-wrapper').find('.show-mega-menu').removeClass('show-mega-menu');
-})
 
 $(document).ready(function () {
     $('.custom-toggle-icon').click(function () {
