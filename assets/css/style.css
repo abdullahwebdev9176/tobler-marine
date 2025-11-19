@@ -823,7 +823,8 @@ ul {
     margin: 0 auto;
     display: none;
 }
-.mega-menu-box.show-mega-menu{
+
+.mega-menu-box.show-mega-menu {
     display: block;
 }
 
@@ -2144,6 +2145,7 @@ footer {
     background: linear-gradient(180deg, #080821 0%, rgba(8, 8, 33, 0.00) 60%);
     z-index: 0;
 }
+
 .servc_img::before {
     position: absolute;
     content: "";
@@ -2155,6 +2157,7 @@ footer {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     z-index: 0;
 }
+
 .brand-slider .owl-nav {
     display: none !important;
 }
@@ -2801,7 +2804,168 @@ footer {
     line-height: 28px;
 }
 
+@media screen and (max-width: 1650px) {
+    .home-banner-title {
+        font-size: 100px;
+    }
+
+    .home-blue-banner-content-box {
+        width: calc(100% - 25%);
+    }
+
+    .number-box-item h4 {
+        font-size: 80px;
+        line-height: 85px;
+    }
+
+    .home-section-title-heading {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .hms_title {
+        padding: 24px;
+        font-size: 23px;
+    }
+
+    .tobler-banner-content {
+        max-width: calc(100% - 25%);
+    }
+
+    .tobler-banner-content h3 {
+        font-size: 80px;
+        line-height: 85px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .home-banner-title {
+        font-size: 80px;
+    }
+
+    .number-box-item h4 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    .home-section-title-heading {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .hms_title {
+        padding: 20px;
+        font-size: 23px;
+    }
+
+    .tobler-banner-content h3 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    .explore-sec,
+    .brands-section {
+        padding: 100px 0;
+    }
+
+    .tobler-banner-content {
+        padding: 200px 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .home-banner-title {
+        font-size: 60px;
+    }
+
+    .number-box-item h4 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .home-section-title-heading {
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .hms_title {
+        padding: 18px;
+        font-size: 23px;
+    }
+
+    .tobler-banner-content h3 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .explore-sec,
+    .brands-section {
+        padding: 80px 0;
+    }
+
+    .tobler-banner-content {
+        padding: 160px 20px;
+    }
+}
+
 @media screen and (max-width: 991px) {
+    .home-banner-video {
+        position: relative;
+        padding-top: 42%;
+        min-height: 400px;
+    }
+
+    .banner-content-box {
+        max-width: calc(100% - 20%);
+    }
+
+    .home-banner-title {
+        font-size: 50px;
+    }
+
+    .home-blue-banner-title {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    .number-box-item h4 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .tobler-container {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .home-section-title-heading {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+
+    .explore-sec,
+    .brands-section {
+        padding: 60px 0;
+    }
+
+    .tobler-banner-content {
+        max-width: calc(100% - 15%);
+    }
+
+    .tobler-banner-content h3 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .home-blue-banner-content-box {
+        width: calc(100% - 20%);
+    }
+
+    .tobler-banner-content {
+        padding: 120px 20px;
+    }
 
     .feature-row {
         margin-left: -15px;
@@ -2812,5 +2976,123 @@ footer {
     .feature-row>.col-lg-6 {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .hms_title {
+        padding: 18px;
+        font-size: 21px;
+    }
+
+    .lg-card-col {
+        width: calc(100% / 2 - 10px);
+        margin-bottom: 20px;
+    }
+
+    .lg-card-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .brand-logo-item {
+        width: calc(100% / 2 - 10px);
+        margin-bottom: 20px;
+        padding: 67px;
+    }
+
+    .brand-logo-box {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .brand-logo-item {
+        padding: 50px;
+        height: 200px;
+    }
+
+    .home-blue-banner-content-box {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tobler-banner-content h3 {
+        font-size: 28px;
+        line-height: 31px;
+    }
+
+    .tobler-banner-content {
+        max-width: 100%;
+    }
+
+    .tobler-banner-content p {
+        margin: 25px 0;
+    }
+
+    .tobler-banner-content {
+        padding: 72px 20px;
+    }
+
+    .home-banner-title {
+        font-size: 36px;
+    }
+
+    .white-outline-btn {
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+
+    .light-blue-btn {
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+
+    .home-section-title-heading {
+        font-size: 28px;
+        line-height: 31px;
+        margin-bottom: 40px;
+    }
+
+    .number-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .number-box-item {
+        width: calc(100% / 8 - 8px);
+    }
+
+    .common-blue-banner {
+        padding: 72px 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .number-box-item {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .brand-logo-item {
+        padding: 50px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .brand-logo-item {
+        padding: 30px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .brand-logo-item {
+        padding: 30px;
+        height: 100px;
     }
 }
