@@ -180,6 +180,7 @@ ul {
     border: 2px solid #fff;
     color: #fff;
 }
+
 .white-outline-btn {
     color: var(--Text-Secondary-title);
     font-family: var(--font-family-title);
@@ -496,8 +497,9 @@ ul {
 .bottom-white-banner .bottom-white-banner-content-box strong {
     font-weight: 700 !important;
 }
+
 .bottom-white-banner .bottom-white-banner-content-box h3 {
-    color:  #000000 !important;
+    color: #000000 !important;
     font-family: var(--font-family-title);
     font-size: 32px;
     font-style: normal;
@@ -788,7 +790,7 @@ ul {
 /* mega menus start here */
 .mega-menu-wrapper {
     position: relative;
-    background: var(--white-color);
+    background: #9CA6BB;
     box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.3);
 }
 
@@ -817,9 +819,12 @@ ul {
 
 .mega-menu-box {
     padding: 40px 15px 65px 15px;
-    max-width: calc(100% - 25%);
+    max-width: calc(100% - 50%);
     margin: 0 auto;
     display: none;
+}
+.mega-menu-box.show-mega-menu{
+    display: block;
 }
 
 .mega-menu-col-1 h6 {
@@ -861,32 +866,22 @@ ul {
 
 .mega-menu-container {
     display: flex;
+    justify-content: center;
 }
 
-.mega-menu-col-1 {
-    width: 42%;
-    display: flex;
+.mega-menu-col {
+    width: calc(100% / 3);
 }
 
-.mega-menu-col-2 {
-    width: 58%;
-}
-
-.mega-menuinner-col {
-    width: 50%;
-}
-
-.mega-menu-col-2 h5 {
-    color: var(--aqua-color);
-    font-family: "Bai Jamjuree";
+.mega-menu-col ul li>a {
+    color: #3A404D;
+    font-family: var(--font-family-Body);
     font-size: 16px;
-    font-style: italic;
-    font-weight: 700;
+    font-style: normal;
+    font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    padding-left: 7.5px;
+    margin-bottom: 16px;
+    display: block;
 }
 
 .mega-boats-col {
@@ -1167,6 +1162,7 @@ ul {
 .form-box .form-col {
     width: calc(50% - 2px);
 }
+
 .loan-calculator-form .form-box .form-col {
     width: calc(33% - 2px);
 }
@@ -2419,10 +2415,11 @@ footer {
 /* --------------------------winterization page --------------------------------- */
 
 
-.winterization-service-menu{
+.winterization-service-menu {
     padding: 90px 0;
 }
-.winterization-service-menu h2{
+
+.winterization-service-menu h2 {
     color: var(--Text-Primary-highlight, #0F0F31);
     text-align: center;
     font-family: "Söhne Breit";
@@ -2432,7 +2429,8 @@ footer {
     line-height: 64px;
     text-transform: uppercase;
 }
-.winterization-service-menu h5{
+
+.winterization-service-menu h5 {
     color: var(--Text-Primary-highlight);
     text-align: left;
     font-family: "Söhne Breit";
@@ -2443,35 +2441,40 @@ footer {
     text-transform: uppercase;
     padding-bottom: 30px;
 }
-.winterization-service-menu h6{
+
+.winterization-service-menu h6 {
     color: var(--Text-Primary-highlight);
     font-family: 'Söhne';
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 22px; 
+    line-height: 22px;
     text-transform: uppercase;
 }
-.winterization-service-menu .card{
+
+.winterization-service-menu .card {
     border-radius: 8px;
     border: 2px solid #D6DAE3;
     background: #F6F6F8;
     box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.05);
     padding: 24px;
 }
-.winterization-service-menu ul{
+
+.winterization-service-menu ul {
     padding: 0 24px;
 }
-.winterization-service-menu ul p{
-    color:  #0F0F31;
+
+.winterization-service-menu ul p {
+    color: #0F0F31;
     font-family: Figtree;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 24px;
 }
-.winterization-service-menu ul li{
-    color:  #0F0F31;
+
+.winterization-service-menu ul li {
+    color: #0F0F31;
     font-family: Figtree;
     font-size: 16px;
     font-style: normal;
@@ -2483,41 +2486,46 @@ footer {
 
 /* --------------------------winterization/summerization booking page --------------------------------- */
 
-.winterization-booking{
+.winterization-booking {
     padding: 100px;
 }
-.winterization-booking h2{
-    color:  #03236B;
+
+.winterization-booking h2 {
+    color: #03236B;
     font-family: 'Söhne';
-    font-size:  16px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height:  24px;
+    line-height: 24px;
 }
-.winterization-booking h1{
-    color:  #3A404D;
+
+.winterization-booking h1 {
+    color: #3A404D;
     font-family: "Söhne Breit";
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
-    line-height: 52.8px; 
+    line-height: 52.8px;
     text-transform: uppercase;
 }
-.booking-details{
+
+.booking-details {
     width: calc(100% - 71.6%);
     margin: 0 auto;
 }
-.booking-details h3{
+
+.booking-details h3 {
     color: #0F0F31;
     font-family: "Söhne Breit";
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height:  38.4px; 
+    line-height: 38.4px;
     text-transform: uppercase;
 }
-.booking-details label{
-    color:  #0F0F31;
+
+.booking-details label {
+    color: #0F0F31;
     font-family: var(--font-family-Body);
     font-size: 16px;
     font-style: normal;
@@ -2525,208 +2533,231 @@ footer {
     line-height: normal;
     padding: 5px 0;
 }
-.booking-details p{
-    color:  #0F0F31;
+
+.booking-details p {
+    color: #0F0F31;
     font-size: 16px;
     font-style: normal;
     padding-left: 20px;
 }
+
 .booking-details .section-card {
     background: #fff;
     border: 2px solid #D6DAE3;
     border-radius: 8px;
-    padding: 40px;    
+    padding: 40px;
     /* margin-bottom: 35px; */
 }
-.booking-details .section-card ul li strong{
+
+.booking-details .section-card ul li strong {
     font-weight: 700;
 }
-.booking-details .section-card ul{
+
+.booking-details .section-card ul {
     padding-left: 25px;
 }
-.booking-details .deliverysuccess ul{
+
+.booking-details .deliverysuccess ul {
     padding-left: 0px;
 }
-.booking-details .section-card input{
+
+.booking-details .section-card input {
     margin-right: 5px;
 }
-.booking-details .section-card ul li{
-    color:  #0F0F31;
+
+.booking-details .section-card ul li {
+    color: #0F0F31;
     font-size: 16px;
     font-style: normal;
     list-style: none;
     /* padding: 0 20px; */
 }
+
 .booking-details hr {
     margin: 25px 0;
 }
-.form-winterization label{
-    color:  #0F0F31;
+
+.form-winterization label {
+    color: #0F0F31;
     text-align: center;
     font-family: Figtree;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height:  24px; 
+    line-height: 24px;
 }
 
 /* --------------------------winterization/summerization booking page --------------------------------- */
 
 /* --------------------------event listing page --------------------------------- */
 
-    .event-card {
-        border: 2px solid #D6DAE3;
-        border-radius: 18px;
-        background: #F6F6F8;
-        margin-bottom: 30px;
-        padding: 18px;
-    }
-    .event-card img {
-            aspect-ratio: 1 / 1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .event-card-body {
-        padding: 10px 0;
-    }
-    .event-title {
-        color: #03236B;
-        font-family: "Söhne Breit";
-        font-size:  32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 38.4px; 
-        text-transform: uppercase;
-    }
-    .event-description {
-        color: #586173;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height:  28px; 
-    }
-    .pagination-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-    }
-    
-    .pagination-wrapper-custom .pagination .page-link {
-        color: #000 !important;
-        background-color: #fff !important;
-        border: 1px solid #dee2e6;
-        border-radius: 8px !important;
-        margin: 0 4px;
-    }
+.event-card {
+    border: 2px solid #D6DAE3;
+    border-radius: 18px;
+    background: #F6F6F8;
+    margin-bottom: 30px;
+    padding: 18px;
+}
 
-    .pagination-wrapper-custom .pagination .page-item.active .page-link {
-        color: #ffffff !important;
-        background-color: #000000 !important;
-        border: 1px solid #dee2e6;
-        border-radius: 8px !important;
-    }
+.event-card img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    .pagination-wrapper-custom .pagination .page-link:hover {
-        background-color: #000 !important;
-        color: #fff !important;
-    }
+.event-card-body {
+    padding: 10px 0;
+}
 
-    .pagination-wrapper-custom .page-item.disabled .page-link {
-        visibility: hidden; 
-    }
+.event-title {
+    color: #03236B;
+    font-family: "Söhne Breit";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.4px;
+    text-transform: uppercase;
+}
+
+.event-description {
+    color: #586173;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination-wrapper-custom .pagination .page-link {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #dee2e6;
+    border-radius: 8px !important;
+    margin: 0 4px;
+}
+
+.pagination-wrapper-custom .pagination .page-item.active .page-link {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border: 1px solid #dee2e6;
+    border-radius: 8px !important;
+}
+
+.pagination-wrapper-custom .pagination .page-link:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.pagination-wrapper-custom .page-item.disabled .page-link {
+    visibility: hidden;
+}
 
 
 /* --------------------------event listing page --------------------------------- */
 
 /* --------------------------event detail page --------------------------------- */
 
-    .event-detail-head p{
-        color: #03236B;
-        font-family: Söhne;
-        font-size:  16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 24px;
-        padding: 20px 0;
-    }
-    .event-detail-head H1{
-        color: #0F0F31;
-        font-family: "Söhne Breit";
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 52.8px;
-        text-transform: uppercase;
-        padding-bottom: 20px;
-    }
-    .event-detail-content h2{
-        color:  #0F0F31;
-        font-family: "Söhne Breit";
-        font-size:  48px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 52.8px; 
-        text-transform: uppercase;
-    }
-    .event-detail-content h3{
-        color:  #0F0F31;
-        font-family: Söhne;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-    }
-    .event-detail-suges .event-card img {
-        aspect-ratio: 1.6 / 1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.event-detail-head p {
+    color: #03236B;
+    font-family: Söhne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 20px 0;
+}
+
+.event-detail-head H1 {
+    color: #0F0F31;
+    font-family: "Söhne Breit";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.event-detail-content h2 {
+    color: #0F0F31;
+    font-family: "Söhne Breit";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-transform: uppercase;
+}
+
+.event-detail-content h3 {
+    color: #0F0F31;
+    font-family: Söhne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.event-detail-suges .event-card img {
+    aspect-ratio: 1.6 / 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* --------------------------event detail page --------------------------------- */
 
 /* --------------------------meet the team page --------------------------------- */
 
-    .team-members-sec h2{
-        color:  #3A404D;
-        font-family:  "Söhne Breit";
-        font-size:  22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px; 
-        text-transform: uppercase;
-    }
-    .team-members-sec .tobler-container{
-        border-radius: 18px;
-        border: 2px solid #D6DAE3;
-        background: #ECEEF2;
-    }
-    .team-members-sec .card{
-        border-radius: 18px;
-        border: 2px solid #D6DAE3;
-        background: #F6F6F8;
-        box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.05);
-    }
-    .team-members-sec .rowcards img{
-        border-radius: 8px;
-        aspect-ratio: 1 / 1 ;
-    }
-    .team-members-sec .rowcards h3{
-        color: #03236B;
-        font-family: Figtree;
-        font-size:  18px;
-        font-style: normal;
-        font-weight: 300;
-        line-height:  25px;
-    }
-    .team-members-sec .rowcards p{
-        color: #586173;
-        font-family: Figtree;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 24px;
-    }
+.team-members-sec h2 {
+    color: #3A404D;
+    font-family: "Söhne Breit";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.team-members-sec .tobler-container {
+    border-radius: 18px;
+    border: 2px solid #D6DAE3;
+    background: #ECEEF2;
+}
+
+.team-members-sec .card {
+    border-radius: 18px;
+    border: 2px solid #D6DAE3;
+    background: #F6F6F8;
+    box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.05);
+}
+
+.team-members-sec .rowcards img {
+    border-radius: 8px;
+    aspect-ratio: 1 / 1;
+}
+
+.team-members-sec .rowcards h3 {
+    color: #03236B;
+    font-family: Figtree;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.team-members-sec .rowcards p {
+    color: #586173;
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
 
 /* --------------------------meet the team page --------------------------------- */
 
@@ -2745,6 +2776,7 @@ footer {
     height: 100%;
     object-fit: cover;
 }
+
 /*  value your boat css start here  */
 
 .ordered-list {
@@ -2760,6 +2792,7 @@ footer {
     font-weight: 300;
     line-height: 28px;
 }
+
 @media screen and (max-width: 991px) {
 
     .feature-row {
