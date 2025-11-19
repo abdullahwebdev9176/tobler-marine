@@ -2413,6 +2413,71 @@ footer {
 
 /* --------------------------staff page --------------------------------- */
 
+/* --------------------------winterization page --------------------------------- */
+
+
+.winterization-service-menu{
+    padding: 90px 0;
+}
+.winterization-service-menu h2{
+    color: var(--Text-Primary-highlight, #0F0F31);
+    text-align: center;
+    font-family: "Söhne Breit";
+    font-size: var(--font-size-Heading-2, 64px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+.winterization-service-menu h5{
+    color: var(--Text-Primary-highlight);
+    text-align: left;
+    font-family: "Söhne Breit";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.4px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.winterization-service-menu h6{
+    color: var(--Text-Primary-highlight);
+    font-family: 'Söhne';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; 
+    text-transform: uppercase;
+}
+.winterization-service-menu .card{
+    border-radius: 8px;
+    border: 2px solid #D6DAE3;
+    background: #F6F6F8;
+    box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.05);
+    padding: 24px;
+}
+.winterization-service-menu ul{
+    padding: 0 24px;
+}
+.winterization-service-menu ul p{
+    color:  #0F0F31;
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+.winterization-service-menu ul li{
+    color:  #0F0F31;
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+/* --------------------------winterization page --------------------------------- */
+
 /* financing page css start here */
 
 .financing-banner-video {
