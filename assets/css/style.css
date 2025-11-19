@@ -2685,6 +2685,51 @@ footer {
 
 /* --------------------------event detail page --------------------------------- */
 
+/* --------------------------meet the team page --------------------------------- */
+
+    .team-members-sec h2{
+        color:  #3A404D;
+        font-family:  "Söhne Breit";
+        font-size:  22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; 
+        text-transform: uppercase;
+    }
+    .team-members-sec .tobler-container{
+        border-radius: 18px;
+        border: 2px solid #D6DAE3;
+        background: #ECEEF2;
+    }
+    .team-members-sec .card{
+        border-radius: 18px;
+        border: 2px solid #D6DAE3;
+        background: #F6F6F8;
+        box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.05);
+    }
+    .team-members-sec .rowcards img{
+        border-radius: 8px;
+        aspect-ratio: 1 / 1 ;
+    }
+    .team-members-sec .rowcards h3{
+        color: #03236B;
+        font-family: Figtree;
+        font-size:  18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height:  25px;
+    }
+    .team-members-sec .rowcards p{
+        color: #586173;
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+/* --------------------------meet the team page --------------------------------- */
+
 /* financing page css start here */
 
 .financing-banner-video {
