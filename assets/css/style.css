@@ -1157,7 +1157,7 @@ ul {
 .form-box {
     max-width: 686px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
 }
 
 .form-box .form-col {
@@ -2440,17 +2440,6 @@ footer {
     padding: 90px 0;
 }
 
-.winterization-service-menu h2 {
-    color: var(--Text-Primary-highlight, #0F0F31);
-    text-align: center;
-    font-family: "Söhne Breit";
-    font-size: var(--font-size-Heading-2, 64px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 64px;
-    text-transform: uppercase;
-}
-
 .winterization-service-menu h5 {
     color: var(--Text-Primary-highlight);
     text-align: left;
@@ -2817,7 +2806,12 @@ footer {
 @media screen and (max-width: 1650px) {
 
     /* common css start here */
-    .bottom-blue-banner, .bottom-white-banner {
+    .bottom-blue-banner,
+    .bottom-white-banner {
+        padding: 120px 32px;
+    }
+
+    .form-sec {
         padding: 120px 32px;
     }
 
@@ -2924,7 +2918,13 @@ footer {
         font-size: 40px;
         line-height: 45px;
     }
-    .bottom-blue-banner, .bottom-white-banner {
+
+    .bottom-blue-banner,
+    .bottom-white-banner {
+        padding: 72px 32px;
+    }
+
+    .form-sec {
         padding: 72px 32px;
     }
 
@@ -3018,7 +3018,7 @@ footer {
 @media screen and (max-width: 1200px) {
 
     /* common css start here */
-    
+
     .accordon-wrapper {
         max-width: calc(100% - 40%);
     }
@@ -3030,6 +3030,10 @@ footer {
     .fiberglass-slider-title {
         font-size: 40px;
         line-height: 42px;
+    }
+    .form-title-heading {
+        font-size: 25px;
+        line-height: 28px;
     }
 
     /* common css ends here */
@@ -3239,9 +3243,11 @@ footer {
     .bottom-blue-banner-content-box {
         width: 100%;
     }
+
     .bottom-white-banner .bottom-white-banner-content-box {
         width: 100%;
     }
+
     .bottom-white-banner .bottom-banner-title {
         font-size: 36px;
         line-height: 36px;
@@ -3377,6 +3383,12 @@ footer {
         letter-spacing: 1px;
     }
 
+    .blue-outline-btn {
+        font-size: 12px;
+        padding: 15px 15px;
+        letter-spacing: 1px;
+    }
+
     .home-section-title-heading {
         font-size: 28px;
         line-height: 31px;
@@ -3400,6 +3412,48 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+
+    /* common css start here */
+
+    .btn-box {
+        flex-wrap: wrap;
+    }
+
+    .common-blue-banner .light-blue-btn {
+        width: 100%;
+    }
+
+    .common-blue-banner .blue-outline-btn {
+        width: 100%;
+    }
+
+    .bottom-blue-banner .blue-outline-btn {
+        width: 100%;
+    }
+
+    .bottom-blue-banner .light-blue-btn {
+        width: 100%;
+    }
+
+    /* common css ends here */
+
+    /* form css start here */
+
+    .form-box .form-col {
+        width: 100%;
+    }
+
+    .form-box .form-row {
+        gap: 0;
+    }
+
+    .form-title-heading {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /* form css ends here */
+
     .banner-content-box {
         max-width: 100%;
         padding-left: 25px;
@@ -3464,6 +3518,10 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
+    .form-sec {
+        padding: 72px 25px;
+    }
+
     .consigning-banner-title {
         font-size: 25px !important;
         line-height: 25px !important;
