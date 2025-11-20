@@ -276,11 +276,6 @@ ul {
     font-weight: 700;
 }
 
-.storage-featured-img {
-    width: 100%;
-    height: 100%;
-}
-
 .storage-featured-box {
     display: flex;
     padding-top: 72px;
@@ -2083,7 +2078,6 @@ footer {
 .lg-card-row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -2176,6 +2170,10 @@ footer {
 .brand-slider .item {
     position: relative;
     padding-top: 45%;
+}
+.fiber-glass-slider .item {
+    position: relative;
+    padding-top: 66% !important;
 }
 
 .brand-slider .item img {
@@ -2319,7 +2317,19 @@ footer {
     font-weight: 700;
     line-height: 28px;
 }
+.restoration-img{
+    position: relative;
+    padding-top: 66%;
+}
 
+.restoration-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* --------------------------canvas page --------------------------------- */
 .feature-icon-circle {
     width: 60px;
@@ -3031,6 +3041,7 @@ footer {
         font-size: 40px;
         line-height: 42px;
     }
+
     .form-title-heading {
         font-size: 25px;
         line-height: 28px;
@@ -3075,6 +3086,18 @@ footer {
 @media screen and (max-width: 991px) {
 
     /* common css start here */
+    .storage-featured-box {
+        flex-wrap: wrap;
+    }
+    .storage-featured-box  .fearured-rich-text{
+            margin: 20px 0 0 0;
+    }
+
+    .storage-featured-co-1,
+    .storage-featured-co-2 {
+        width: 100%;
+    }
+
     .bottom-white-banner .bottom-white-banner-content-box h3 {
         font-size: 18px;
         line-height: 22px;
