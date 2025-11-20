@@ -132,6 +132,19 @@ $('.brand-slider').owlCarousel({
         }
     }
 })
+
+$(document).ready(function () {
+  $(".polaroid-owl-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    dots: true,
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 600,
+  });
+});
 //faq accordion on frontpage
 if ($('.custom-accordion-header').length) {
     $(".custom-accordion-header").click(function () {

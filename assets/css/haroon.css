@@ -1,3 +1,133 @@
+.staffpositions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #586173;
+  border-top: 1px solid #586173;
+  padding: 0.5rem 0;
+}
+.staffpositions h3 {
+  color: #0f0f31;
+  text-align: right;
+  font-family: Söhne;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.staffpositions p {
+  color: #586173;
+  font-family: Figtree;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+/* ----------history -------- */
+.polaroid-carousel-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.polaroid-carousel-container .owl-stage-outer {
+  background-color: #f7f3ee;
+}
+
+.polaroid-item {
+  display: block;
+  padding: 30px;
+  border-radius: 8px;
+  transform: rotate(-0.5deg);
+  transition: transform 0.3s ease;
+  position: relative;
+  transform: rotate(3deg);
+}
+
+.polaroid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.polaroid-owl-carousel .owl-dots {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.polaroid-owl-carousel .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  padding: 5px;
+}
+
+.polaroid-owl-carousel .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  background: #a9a9a9;
+  display: block;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+
+.polaroid-owl-carousel .owl-dot.active span {
+  background: #333333;
+  transform: scale(1.2);
+}
+
+.polaroid-owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.polaroid-owl-carousel .owl-nav button.owl-prev,
+.polaroid-owl-carousel .owl-nav button.owl-next {
+  position: relative;
+  background: #5c6773 !important;
+  width: 32px;
+  height: 32px;
+  line-height: 28px;
+  border-radius: 5px;
+  color: #ffffff !important;
+  font-size: 20px;
+  padding: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  outline: none;
+}
+
+.polaroid-owl-carousel .owl-nav button.owl-prev:hover,
+.polaroid-owl-carousel .owl-nav button.owl-next:hover {
+  opacity: 1;
+}
+
+.polaroid-owl-carousel .owl-nav button.owl-prev:before {
+  content: "‹";
+  display: block;
+}
+
+.polaroid-owl-carousel .owl-nav button.owl-next:before {
+  content: "›";
+  display: block;
+}
+
+.polaroid-owl-carousel .owl-nav button.owl-prev span,
+.polaroid-owl-carousel .owl-nav button.owl-next span {
+  display: none;
+}
+
+
+
+/* ----------history -------- */
 
 @media screen and (max-width: 1700px) {
 }
@@ -16,7 +146,92 @@
 @media screen and (max-width: 991px) {
 }
 @media screen and (max-width: 768px) {
+  .polaroid-carousel-container {
+    max-width: 100%;
+    margin: auto;
+  }
+  .loan-calculator-form .form-box .form-col {
+    width: 100%;
+}
+.event-title, .event-meta, .event-description{
+    font-size: 18px;
+}
+.event-detail-head H1 {
+    font-size: 28px;
+    font-style: normal;
+
+}
+.event-detail-head p {
+    font-size: 12px;
+    font-style: normal;
+
+}
+.event-detail-content h2 {
+    font-size: 28px;
+    line-height: normal;
+}
+.event-detail-content h3 {
+    font-size: 18px;
 }
 
+.event-detail-suges .row::-webkit-scrollbar {
+    height: 6px;
+}
+
+.event-detail-suges .row::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 20px;
+}
+
+.event-detail-suges .row::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.event-detail-suges .event-scroll-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+
+}
+
+.event-detail-suges .event-scroll-row::-webkit-scrollbar {
+    height: 10px !important;
+    background: #ffffff;
+    border: 1px solid #D6DAE3;
+    border-radius: 30px;
+}
+
+.event-detail-suges .event-scroll-row::-webkit-scrollbar-thumb {
+    background: #AEB6C7;
+    border-radius: 10px;
+    border: 1px solid #D6DAE3;
+    height: 10px !important;
+}
+.winterization-booking {
+    padding: 40px;
+}
+.winterization-booking h1 {
+    font-size: 28px;
+    line-height: normal;
+}
+.winterization-booking h2 {
+    font-size: 12px;
+    line-height: normal;
+}
+.winterization-booking p {
+    font-size: 18px;
+    line-height: normal;
+}
+.booking-details {
+    width: calc(100% - 10%);
+    margin: 0 auto;
+}
+.booking-details p {
+    font-size: 16px;
+}
+.booking-details h3 {
+    font-size: 18px;
+}
+}
 @media screen and (max-width: 576px) {
 }

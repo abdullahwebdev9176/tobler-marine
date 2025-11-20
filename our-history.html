@@ -18,114 +18,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/haroon.css">
 
-    <style>
-
-        .polaroid-carousel-container {
-            max-width: 600px; 
-            margin: auto;
-        }
-        .polaroid-carousel-container .owl-stage-outer{
-            
-            background-color: #F7F3EE; 
-        }
-
-        .polaroid-item {
-            display: block;
-            padding: 30px;
-            border-radius: 8px;
-            transform: rotate(-0.5deg);
-            transition: transform 0.3s ease;
-            position: relative;
-            transform: rotate(3deg);
-        }
-
-        .polaroid-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 4px;
-        }
-
-        .polaroid-owl-carousel .owl-dots {
-            text-align: center;
-            padding-top: 30px;
-        }
-
-        .polaroid-owl-carousel .owl-dot {
-            display: inline-block;
-            zoom: 1;
-            padding: 5px; 
-        }
-
-        .polaroid-owl-carousel .owl-dot span {
-            width: 8px; 
-            height: 8px;
-            margin: 0 4px;
-            background: #a9a9a9; 
-            display: block;
-            transition: opacity 200ms ease;
-            border-radius: 30px;
-        }
-
-        .polaroid-owl-carousel .owl-dot.active span {
-            background: #333333; 
-            transform: scale(1.2);
-        }
-
-    .polaroid-owl-carousel .owl-nav {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -150%); 
-        z-index: 10;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        gap: 10px;  
-    }
-
-        .polaroid-owl-carousel .owl-nav button.owl-prev,
-        .polaroid-owl-carousel .owl-nav button.owl-next {
-            position: relative;
-            background: #5c6773 !important; 
-            width: 32px;
-            height: 32px;
-            line-height: 28px;
-            border-radius: 5px;  
-            color: #ffffff !important; 
-            font-size: 20px;
-            padding: 0;
-            opacity: 0.8;
-            transition: opacity 0.2s ease, background 0.2s ease;
-            outline: none;  
-        }
-
-        .polaroid-owl-carousel .owl-nav button.owl-prev:hover,
-        .polaroid-owl-carousel .owl-nav button.owl-next:hover {
-            opacity: 1;
-        }
- 
-        .polaroid-owl-carousel .owl-nav button.owl-prev:before {
-            content: '‹';  
-            display: block;
-        }
-        .polaroid-owl-carousel .owl-nav button.owl-next:before {
-            content: '›';  
-            display: block;
-        }
-         
-        .polaroid-owl-carousel .owl-nav button.owl-prev span,
-        .polaroid-owl-carousel .owl-nav button.owl-next span {
-            display: none;
-        }
-
-        @media (max-width: 767px) {
-            .polaroid-carousel-container {
-                        max-width: 100%; 
-                        margin: auto;
-                    }
-        }
-    </style>
 </head>
 
 <body>
@@ -146,7 +38,9 @@
 
     <div class="common-blue-banner">
         <div class="blue-banner-content-box text-center">
-            <h2 class="blue-sm-title mb-3">For over 75 years, Tobler Marina has been proudly serving North Idaho boaters with dedication and heart. We’ve built our legacy on local roots, lasting relationships, and a shared love for life on the water.</h2>
+            <h2 class="blue-sm-title mb-3">For over 75 years, Tobler Marina has been proudly serving North Idaho boaters
+                with dedication and heart. We’ve built our legacy on local roots, lasting relationships, and a shared
+                love for life on the water.</h2>
 
             <div class="btn-box justify-content-center mt-5">
                 <a href="" id="fiberglass-request-btn" class="light-blue-btn">Contact Us</a>
@@ -163,7 +57,9 @@
                     <div class="content-box fp-r">
                         <h3 class="featured-title">On the Water <br class="d-lg-block d-none"> since 1948</h3>
                         <div class="fearured-rich-text mb-0">
-                            <p> First established in 1948, Tobler Marina is the oldest certified dealer and one of the largest boat dealerships serving the Inland Northwest. What began as a small, family-run business has grown into a trusted name in the region’s boating community.
+                            <p> First established in 1948, Tobler Marina is the oldest certified dealer and one of the
+                                largest boat dealerships serving the Inland Northwest. What began as a small, family-run
+                                business has grown into a trusted name in the region’s boating community.
                             </p>
                         </div>
                     </div>
@@ -182,73 +78,77 @@
     <section class=" bg-light-gray">
         <div class="tobler-container">
             <div class="tobler-featured-box service-featured-box">
-    
+
                 <div class="tobler-featured-col mb-4 mb-lg-0">
                     <div class="tobler-featured-img fp-r">
                         <img src="./assets/images/fiberglass/fiberglass-img-1.jpg" alt="Local Experts in Boat Repair ">
                     </div>
                 </div>
-    
+
                 <div class="tobler-featured-col">
                     <div class="content-box fp-l">
                         <h3 class="featured-title">North Idaho <br class="d-lg-block d-none"> Roots </h3>
                         <div class="fearured-rich-text mb-0">
-                            <p> With three locations, we are proud to support our local community as a family owned and operated dealership. Tobler Marina has always been about connection between people, their boats, and the water. Over the decades, we have built lasting relationships with boaters who share our love for life on the lake.
+                            <p> With three locations, we are proud to support our local community as a family owned and
+                                operated dealership. Tobler Marina has always been about connection between people,
+                                their boats, and the water. Over the decades, we have built lasting relationships with
+                                boaters who share our love for life on the lake.
                             </p>
                         </div>
                     </div>
                 </div>
-    
-    
+
+
             </div>
-    
-    
+
+
         </div>
     </section>
 
-<section class="tobler-featured-box">
-    <div class="container polaroid-carousel-container">
-    
-    <!-- Unique Class for Owl Carousel: 'polaroid-owl-carousel' -->
-    <div class="polaroid-owl-carousel owl-carousel owl-theme">
-        
-        <!-- Slide 1 -->
-        <div class="item">
-            <div class="polaroid-item">
-                <!-- Use the uploaded image as the source -->
-                <img src="./assets/images/our-history/carousel-img1.png" 
-                     alt="Vintage boat ramp scene" 
-                     onerror="this.onerror=null; this.src='./assets/images/our-history/carousel-img1.png';">
+    <section class="tobler-featured-box">
+        <div class="container polaroid-carousel-container">
+
+            <!-- Unique Class for Owl Carousel: 'polaroid-owl-carousel' -->
+            <div class="polaroid-owl-carousel owl-carousel owl-theme">
+
+                <!-- Slide 1 -->
+                <div class="item">
+                    <div class="polaroid-item">
+                        <!-- Use the uploaded image as the source -->
+                        <img src="./assets/images/our-history/carousel-img1.png" alt="Vintage boat ramp scene"
+                            onerror="this.onerror=null; this.src='./assets/images/our-history/carousel-img1.png';">
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="item">
+                    <div class="polaroid-item">
+                        <img src="./assets/images/our-history/carousel-img1.png" alt="Summer day scene"
+                            onerror="this.onerror=null; this.src='./assets/images/our-history/carousel-img1.png';">
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="item">
+                    <div class="polaroid-item">
+                        <img src="./assets/images/our-history/carousel-img1.png" alt="Mountain view"
+                            onerror="this.onerror=null; this.src='./assets/images/our-history/carousel-img1.png';">
+                    </div>
+                </div>
+
             </div>
         </div>
-        
-        <!-- Slide 2 -->
-        <div class="item">
-            <div class="polaroid-item">
-                <img src="./assets/images/our-history/carousel-img1.png" 
-                     alt="Summer day scene" 
-                     onerror="this.onerror=null; this.src='./assets/images/our-history/carousel-img1.png';">
-            </div>
-        </div>
-        
-        <!-- Slide 3 -->
-        <div class="item">
-            <div class="polaroid-item">
-                <img src="./assets/images/our-history/carousel-img1.png" 
-                     alt="Mountain view" 
-                     onerror="this.onerror=null; this.src='./assets/images/our-history/carousel-img1.png';">
-            </div>
-        </div>
-        
-    </div>
-</div>
-</section>
+    </section>
 
     <section class="fiberglass-slider-section bottom-blue-banner">
 
         <div class="fiberglass-slider-section-header fiber-glass-slider-wrapper px-0">
             <h2 class="fiberglass-slider-title text-center text-white">Built on History. <br>Focused on the Future.</h2>
-            <p class=" text-white">Today, Tobler Marina continues to provide full-service boating experiences from sales and service to storage, detailing, and year-round support. Our facilities are equipped with the latest technology and staffed by certified marine technicians who ensure that every boat we sell or service meets the highest standards of care. Whether you are buying your first boat or maintaining a family favorite, our goal is to make every step easy and enjoyable.</p>
+            <p class=" text-white">Today, Tobler Marina continues to provide full-service boating experiences from sales
+                and service to storage, detailing, and year-round support. Our facilities are equipped with the latest
+                technology and staffed by certified marine technicians who ensure that every boat we sell or service
+                meets the highest standards of care. Whether you are buying your first boat or maintaining a family
+                favorite, our goal is to make every step easy and enjoyable.</p>
         </div>
         <div class="fiber-glass-slider-wrapper px-0">
 
@@ -280,38 +180,40 @@
 
 
     <section class="py-5 prostaffpartners bg-light-gray">
-    <div class="container">
-        <h2 class="text-center featured-title py-4">AWARD WINNING MARINA</h2>
-        <p>Our commitment to quality and customer satisfaction has earned us recognition as a Top 100 Dealer by Boating Industry and a Five-Star Dealer. These awards reflect our dedication to doing things the right way, offering reliable service, trusted guidance, and premium products that stand the test of time.</p>
-        
-        <div class="row m-0 py-4">
+        <div class="container">
+            <h2 class="text-center featured-title py-4">AWARD WINNING MARINA</h2>
+            <p>Our commitment to quality and customer satisfaction has earned us recognition as a Top 100 Dealer by
+                Boating Industry and a Five-Star Dealer. These awards reflect our dedication to doing things the right
+                way, offering reliable service, trusted guidance, and premium products that stand the test of time.</p>
 
-            <div class="mb-4 col-lg-4">
-                <div class="card h-100 text-center p-3">
-                    <div class="rowcards">
-                        <img class="" src="/assets/images/our-history/logoimg1.png" alt="logoimg1">
+            <div class="row m-0 py-4">
+
+                <div class="mb-4 col-lg-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="rowcards">
+                            <img class="" src="/assets/images/our-history/logoimg1.png" alt="logoimg1">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="mb-4 col-lg-4">
-                <div class="card h-100 text-center p-3">
-                    <div class="rowcards">
-                        <img class="" src="/assets/images/our-history/logoimg2.png" alt="logoimg2">
+                <div class="mb-4 col-lg-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="rowcards">
+                            <img class="" src="/assets/images/our-history/logoimg2.png" alt="logoimg2">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="mb-4 col-lg-4">
-                <div class="card h-100 text-center p-3">
-                    <div class="rowcards">
-                        <img class="" src="/assets/images/our-history/logoimg3.png" alt="logoimg3">
+                <div class="mb-4 col-lg-4">
+                    <div class="card h-100 text-center p-3">
+                        <div class="rowcards">
+                            <img class="" src="/assets/images/our-history/logoimg3.png" alt="logoimg3">
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
     </section>
 
     <div class="tobler-container">
@@ -321,7 +223,10 @@
                 <div class="content-box fp-r">
                     <h3 class="featured-title">Built by Boaters, for Boaters</h3>
                     <div class="fearured-rich-text">
-                        <p>Our team is made up of passionate boaters who understand the lifestyle because they live it. From sales and service to detailing and delivery, every department is driven by firsthand experience on the water. We take pride in sharing that knowledge with our customers, offering genuine guidance and care that comes from a shared love of boating.
+                        <p>Our team is made up of passionate boaters who understand the lifestyle because they live it.
+                            From sales and service to detailing and delivery, every department is driven by firsthand
+                            experience on the water. We take pride in sharing that knowledge with our customers,
+                            offering genuine guidance and care that comes from a shared love of boating.
                         </p>
                     </div>
 
@@ -333,7 +238,8 @@
 
             <div class="tobler-featured-col mb-4 mb-lg-0">
                 <div class="tobler-featured-img fp-l">
-                    <img src="./assets/images/our-history/outhistoryboat.png" alt="Tobler Marina Our History Boat Image">
+                    <img src="./assets/images/our-history/outhistoryboat.png"
+                        alt="Tobler Marina Our History Boat Image">
                 </div>
             </div>
 
@@ -357,22 +263,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
-
-
-<script>
-$(document).ready(function(){
-    $(".polaroid-owl-carousel").owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: true,
-        dots: true,
-        items: 1,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        smartSpeed: 600
-    });
-});
-</script>
 
 </body>
 

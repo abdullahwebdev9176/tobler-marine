@@ -18,6 +18,55 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/haroon.css">
 
+    <style>
+        /* Outer accordion card */
+        .team-accordion-item {
+            border-radius: 15px;
+            border: 1px solid #e0e6ed;
+            background: #f5f7fa;
+        }
+
+        /* Header button style */
+        .department-btn {
+            font-size: 20px;
+            font-weight: 600;
+            color: #222 !important;
+            text-decoration: none !important;
+            padding: 0;
+        }
+
+        /* Arrow icon */
+        .arrow-icon {
+            font-size: 30px;
+            transform: rotate(90deg);
+            transition: 0.3s ease;
+        }
+
+        /* Rotate arrow when expanded */
+        #dept1.show~.arrow-icon,
+        .card-header[aria-expanded="true"] .arrow-icon {
+            transform: rotate(-90deg);
+        }
+
+        /* Member card design */
+        .member-card {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e0e6ed;
+            padding: 15px;
+            transition: 0.2s ease;
+        }
+
+        .member-card img {
+            border-radius: 12px;
+        }
+
+        /* Hover effect */
+        .member-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+
 </head>
 
 <body>
@@ -29,7 +78,7 @@
 
             <div class="common-banner-content">
                 <div class="common-content-box">
-                    <h1 class="common-banner-title">Meet the Team</h1>
+                    <h1 class="common-banner-title">Meet <br class="d-lg-done d-block"> the Team</h1>
                 </div>
 
             </div>
@@ -38,434 +87,564 @@
 
     <div class="common-blue-banner">
         <div class="blue-banner-content-box text-center">
-            <h2 class="blue-sm-title mb-3"> Meet the dedicated team that makes Tobler Marina what it is today. Our staff is passionate about boating, committed to excellent service, and ready to help you make the most of your time on the water. </h2>
+            <h2 class="blue-sm-title mb-3"> Meet the dedicated team that makes Tobler Marina what it is today. Our staff
+                is passionate about boating, committed to excellent service, and ready to help you make the most of your
+                time on the water. </h2>
 
         </div>
     </div>
 
-    <section style="background: #F6F6F8;">
-        
-            <section class="py-3 team-members-sec">
-                <div class="tobler-container">
-                    <h2 class="text-left featured-title p-3">Department name</h2>
-                    <div class="row m-0">
-        
-                        <div class="col-lg-3 mb-4">
-                            <div class="card h-100 text-center p-3">
-                                <div class="rowcards text-left">
-                                    <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                    <div class="pt-3">
-                                        <h3>Name Lastname</h3>
-                                        <p>Director of Filler Text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-3 mb-4">
-                            <div class="card h-100 text-center p-3">
-                                <div class="rowcards text-left">
-                                    <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                    <div class="pt-3">
-                                        <h3>Name Lastname</h3>
-                                        <p>Director of Filler Text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-3 mb-4">
-                            <div class="card h-100 text-center p-3">
-                                <div class="rowcards text-left">
-                                    <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                    <div class="pt-3">
-                                        <h3>Name Lastname</h3>
-                                        <p>Director of Filler Text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-3 mb-4">
-                            <div class="card h-100 text-center p-3">
-                                <div class="rowcards text-left">
-                                    <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                    <div class="pt-3">
-                                        <h3>Name Lastname</h3>
-                                        <p>Director of Filler Text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-3 mb-4">
-                            <div class="card h-100 text-center p-3">
-                                <div class="rowcards text-left">
-                                    <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                    <div class="pt-3">
-                                        <h3>Name Lastname</h3>
-                                        <p>Director of Filler Text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-3 mb-4">
-                            <div class="card h-100 text-center p-3">
-                                <div class="rowcards text-left">
-                                    <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                    <div class="pt-3">
-                                        <h3>Name Lastname</h3>
-                                        <p>Director of Filler Text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-3 mb-4">
-                            <div class="card h-100 text-center p-3">
-                                <div class="rowcards text-left">
-                                    <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                    <div class="pt-3">
-                                        <h3>Name Lastname</h3>
-                                        <p>Director of Filler Text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-3 mb-4">
-                            <div class="card h-100 text-center p-3">
-                                <div class="rowcards text-left">
-                                    <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                    <div class="pt-3">
-                                        <h3>Name Lastname</h3>
-                                        <p>Director of Filler Text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
+    <div class="container-fluid p-lg-5 p-3">
+
+        <div class="py-lg-3 py-2 team-members-sec">
+
+            <div id="teamAccordion1">
+
+                <!-- Accordion Item -->
+                <div class="card team-accordion-item">
+
+                    <!-- Header -->
+                    <div class="p-3" id="headingOne" data-toggle="collapse" data-target="#dept1">
+                        <h2
+                            class="text-left featured-title p-3 mb-0 d-flex justify-content-between align-items-center btn-link department-btn">
+                            Department name <span class="arrow-icon">&#x203A;</span></h2>
+
                     </div>
+
+                    <!-- Body -->
+                    <div id="dept1" class="collapse show" data-parent="#teamAccordion1">
+                        <div class="">
+
+
+                            <div class="row m-0">
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
-            </section>
-        
-            <section class="py-3 team-members-sec">
-            <div class="tobler-container">
-                <h2 class="text-left featured-title p-3">Department name</h2>
-                <div class="row m-0">
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                </div>
+
             </div>
-            </section>
-        
-            <section class="py-3 team-members-sec">
-            <div class="tobler-container">
-                <h2 class="text-left featured-title p-3">Department name</h2>
-                <div class="row m-0">
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
+
+        </div>
+
+        <div class="py-lg-3 py-2 team-members-sec">
+
+            <div id="teamAccordion2">
+
+                <!-- Accordion Item -->
+                <div class="card team-accordion-item">
+
+                    <!-- Header -->
+                    <div class="p-3" id="headingOne" data-toggle="collapse" data-target="#dept2">
+                        <h2
+                            class="text-left featured-title p-3 mb-0 d-flex justify-content-between align-items-center btn-link department-btn">
+                            Department name <span class="arrow-icon">&#x203A;</span></h2>
+
+                    </div>
+
+                    <!-- Body -->
+                    <div id="dept2" class="collapse show" data-parent="#teamAccordion2">
+                        <div class="">
+
+
+                            <div class="row m-0">
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
                     </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
+
                 </div>
+
             </div>
-            </section>
-        
-            <section class="py-3 team-members-sec">
-            <div class="tobler-container">
-                <h2 class="text-left featured-title p-3">Department name</h2>
-                <div class="row m-0">
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
+
+        </div>
+
+        <div class="py-lg-3 py-2 team-members-sec">
+
+            <div id="teamAccordion3">
+
+                <!-- Accordion Item -->
+                <div class="card team-accordion-item">
+
+                    <!-- Header -->
+                    <div class="p-3" id="headingOne" data-toggle="collapse" data-target="#dept3">
+                        <h2
+                            class="text-left featured-title p-3 mb-0 d-flex justify-content-between align-items-center btn-link department-btn">
+                            Department name <span class="arrow-icon">&#x203A;</span></h2>
+
+                    </div>
+
+                    <!-- Body -->
+                    <div id="dept3" class="collapse show" data-parent="#teamAccordion3">
+                        <div class="">
+
+
+                            <div class="row m-0">
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
                     </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 mb-4">
-                        <div class="card h-100 text-center p-3">
-                            <div class="rowcards text-left">
-                                <img class="w-100" src="/assets/images/meet-team/team-card.png" alt="team member">
-                                <div class="pt-3">
-                                    <h3>Name Lastname</h3>
-                                    <p>Director of Filler Text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
+
                 </div>
+
             </div>
-            </section>
-            
-    </section>
+
+        </div>
+
+        <div class="py-lg-3 py-2 team-members-sec">
+
+            <div id="teamAccordion4">
+
+                <!-- Accordion Item -->
+                <div class="card team-accordion-item">
+
+                    <!-- Header -->
+                    <div class="p-3" id="headingOne" data-toggle="collapse" data-target="#dept4">
+                        <h2
+                            class="text-left featured-title p-3 mb-0 d-flex justify-content-between align-items-center btn-link department-btn">
+                            Department name <span class="arrow-icon">&#x203A;</span></h2>
+
+                    </div>
+
+                    <!-- Body -->
+                    <div id="dept4" class="collapse show" data-parent="#teamAccordion4">
+                        <div class="">
+
+
+                            <div class="row m-0">
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 mb-4">
+                                    <div class="card h-100 text-center p-3">
+                                        <div class="rowcards text-left">
+                                            <img class="w-100" src="/assets/images/meet-team/team-card.png"
+                                                alt="team member">
+                                            <div class="pt-3">
+                                                <h3>Name Lastname</h3>
+                                                <p>Director of Filler Text</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
