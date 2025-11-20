@@ -2446,6 +2446,7 @@ footer {
     line-height: 24px;
 }
 
+
 .feature-row>.col-12 {
     margin-bottom: 1.5rem;
 }
@@ -3337,7 +3338,6 @@ footer {
     .tobler-banner-content {
         padding: 120px 20px;
     }
-
     .feature-row {
         margin-left: -15px;
         margin-right: -15px;
@@ -3586,34 +3586,34 @@ footer {
     font-size: 18px;
 }
 
-.event-detail-suges .row::-webkit-scrollbar {
+/* .row::-webkit-scrollbar {
     height: 6px;
 }
 
-.event-detail-suges .row::-webkit-scrollbar-thumb {
+.row::-webkit-scrollbar-thumb {
     background: #bbb;
     border-radius: 20px;
 }
 
-.event-detail-suges .row::-webkit-scrollbar-track {
+.row::-webkit-scrollbar-track {
     background: transparent;
-}
+} */
 
-.event-detail-suges .event-scroll-row {
+.event-scroll-row {
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 20px;
 
 }
 
-.event-detail-suges .event-scroll-row::-webkit-scrollbar {
+.event-scroll-row::-webkit-scrollbar {
     height: 10px !important;
     background: #ffffff;
     border: 1px solid #D6DAE3;
     border-radius: 30px;
 }
 
-.event-detail-suges .event-scroll-row::-webkit-scrollbar-thumb {
+.event-scroll-row::-webkit-scrollbar-thumb {
     background: #AEB6C7;
     border-radius: 10px;
     border: 1px solid #D6DAE3;
