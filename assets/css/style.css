@@ -251,8 +251,8 @@ ul {
 
 .tobler-featured-box {
     display: flex;
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding-top: 148px;
+    padding-bottom: 148px;
 }
 
 .tobler-featured-col {
@@ -423,10 +423,10 @@ ul {
 .common-banner-title {
     color: var(--white-color);
     font-family: var(--font-family-title);
-    font-size: var(--font-size-Heading-1, 96px);
+    font-size: 96px;
     font-style: normal;
     font-weight: 400;
-    line-height: var(--font-line-height-Heading-1, 96px);
+    line-height: 96px;
     text-transform: uppercase;
     border-bottom: 3px solid #357BFF;
     padding-bottom: 5px;
@@ -531,7 +531,7 @@ ul {
 }
 
 .accordion-sec {
-    padding: 148px 15px;
+    padding: 148px 32px;
     background: #AEB6C7;
 }
 
@@ -2815,6 +2815,46 @@ footer {
 }
 
 @media screen and (max-width: 1650px) {
+
+    /* common css start here */
+    .bottom-blue-banner, .bottom-white-banner {
+        padding: 120px 32px;
+    }
+
+    .accordion-sec {
+        padding: 120px 32px;
+    }
+
+    .accordon-wrapper {
+        max-width: calc(100% - 45%);
+    }
+
+    .blue-banner-content-box {
+        width: calc(100% - 40%);
+        margin: 0 auto;
+    }
+
+    .tobler-featured-box,
+    .fiberglass-slider-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /* common css ends here */
+
+    /* fiberglass css start here */
+
+    .fiberglass-slider-title {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .brands-section {
+        padding: 120px 0;
+    }
+
+    /* home page css start here */
+
     .home-banner-title {
         font-size: 100px;
     }
@@ -2848,14 +2888,106 @@ footer {
     }
 }
 
+@media screen and (max-width: 1500px) {
+
+    /* common css start here */
+    .blue-sm-title {
+        font-size: 35px;
+        line-height: 41px;
+    }
+
+    .feature-card {
+        min-height: 300px;
+        padding: 70px 24px;
+    }
+
+    .common-banner-title {
+        font-size: 75px;
+        line-height: 80px;
+    }
+
+    /* common css ends here */
+}
+
 @media screen and (max-width: 1300px) {
+
+    /* common css start here */
+    .bottom-white-banner .bottom-white-banner-content-box {
+        width: calc(100% - 35%);
+    }
+
+    .bottom-blue-banner-content-box {
+        width: calc(100% - 30%);
+    }
+
+    .bottom-banner-title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .bottom-blue-banner, .bottom-white-banner {
+        padding: 72px 32px;
+    }
+
+    .accordion-sec {
+        padding: 72px 32px;
+    }
+
+    .blue-sm-title {
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .tobler-featured-box,
+    .fiberglass-slider-section {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    .blue-banner-content-box {
+        width: calc(100% - 30%);
+    }
+
+    .tobler-featured-box {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    .common-content-box {
+        width: 100%;
+        padding-left: 70px;
+    }
+
+    .common-banner-title {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
     .home-banner-title {
         font-size: 80px;
     }
 
+    /* common css start here */
+
     .number-box-item h4 {
         font-size: 60px;
         line-height: 65px;
+    }
+
+    .tobler-container {
+        width: calc(100% - 8%);
+    }
+
+    .fp-r {
+        padding-right: 30px;
+    }
+
+    .featured-title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .fp-l {
+        padding-left: 30px;
     }
 
     .home-section-title-heading {
@@ -2875,7 +3007,7 @@ footer {
 
     .explore-sec,
     .brands-section {
-        padding: 100px 0;
+        padding: 72px 0;
     }
 
     .tobler-banner-content {
@@ -2884,6 +3016,24 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+
+    /* common css start here */
+    
+    .accordon-wrapper {
+        max-width: calc(100% - 40%);
+    }
+
+    .blue-banner-content-box {
+        width: calc(100% - 15%);
+    }
+
+    .fiberglass-slider-title {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    /* common css ends here */
+
     .home-banner-title {
         font-size: 60px;
     }
@@ -2919,6 +3069,75 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+
+    /* common css start here */
+    .bottom-white-banner .bottom-white-banner-content-box h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .bottom-white-banner .bottom-banner-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .accordon-wrapper {
+        max-width: calc(100% - 20%);
+    }
+
+    .tobler-featured-box {
+        flex-wrap: wrap;
+    }
+
+    .common-banner-title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .common-content-box {
+        padding-left: 32px;
+    }
+
+    .fp-l {
+        padding-left: 0;
+    }
+
+    .fp-r {
+        padding-right: 0;
+    }
+
+    .reverse-column {
+        flex-direction: column-reverse;
+    }
+
+    .fixed-height-img {
+        min-height: unset;
+    }
+
+    .tobler-featured-col {
+        width: 100%;
+    }
+
+    .common-banner-content {
+        bottom: 70px;
+    }
+
+    .common-banner-title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    /* common css start here */
+
+    /* fiberglass css start here */
+
+    .fiberglass-slider-section-header {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* fiberglass css ends here */
+
     .home-banner-video {
         position: relative;
         padding-top: 42%;
@@ -2945,8 +3164,8 @@ footer {
 
     .tobler-container {
         width: 100%;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .home-section-title-heading {
@@ -2984,8 +3203,8 @@ footer {
 
     .feature-row>.col-lg-4,
     .feature-row>.col-lg-6 {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .hms_title {
@@ -3015,10 +3234,110 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+
+    /* common css start here */
+    .bottom-blue-banner-content-box {
+        width: 100%;
+    }
+    .bottom-white-banner .bottom-white-banner-content-box {
+        width: 100%;
+    }
+    .bottom-white-banner .bottom-banner-title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .bottom-banner-title {
+        font-size: 28px;
+        line-height: 31px;
+    }
+
     .brand-logo-item {
         padding: 50px;
         height: 200px;
     }
+
+    .tobler-featured-box {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    .common-content-box {
+        padding-left: 0;
+    }
+
+    .common-header-img {
+        min-height: 600px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .featured-title {
+        font-size: 28px;
+        line-height: 31px;
+    }
+
+    .common-banner-content {
+        bottom: 72px;
+        left: 50%;
+        z-index: 2;
+        transform: translateX(-50%);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .common-banner-title {
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    .blue-sm-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .blue-banner-content-box {
+        width: 100%;
+    }
+
+    .accordon-wrapper {
+        max-width: 100%;
+        padding: 40px;
+    }
+
+    .custom-accordion-header h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .accordion-card {
+        padding: 15px 0;
+    }
+
+    /* common css ends here */
+
+    /* consignment css start here */
+
+    .consigning-banner-title {
+        font-size: 36px !important;
+        line-height: 36px !important;
+    }
+
+    /* fibglass css start here */
+    .fiber-glass-slider-wrapper {
+        max-width: calc(100% - 20%);
+    }
+
+    .fiberglass-slider-title {
+        font-size: 28px;
+        line-height: 31px;
+    }
+
+    /* fibglass css ends here */
 
     .home-blue-banner-content-box {
         width: 100%;
@@ -3076,7 +3395,7 @@ footer {
     }
 
     .common-blue-banner {
-        padding: 72px 15px;
+        padding: 72px 32px;
     }
 }
 
@@ -3120,12 +3439,65 @@ footer {
         height: 150px;
     }
 
+    /* fiberglass css start here */
+
+    .fiber-glass-slider-wrapper {
+        max-width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .fiberglass-slider-section-header p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* fiberglass css ends here */
+
 }
 
 @media screen and (max-width: 450px) {
     .brand-logo-item {
         padding: 30px;
         height: 120px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .consigning-banner-title {
+        font-size: 25px !important;
+        line-height: 25px !important;
+    }
+
+    .fiber-glass-slider-wrapper {
+        max-width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .feature-row>.col-lg-4,
+    .feature-row>.col-lg-6 {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .tobler-container {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .accordion-sec {
+        padding: 72px 25px;
+    }
+
+    .common-banner-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .common-blue-banner {
+        padding: 72px 25px;
     }
 }
 
