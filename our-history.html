@@ -18,7 +18,114 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/haroon.css">
 
+    <style>
 
+        .polaroid-carousel-container {
+            max-width: 600px; 
+            margin: auto;
+        }
+        .polaroid-carousel-container .owl-stage-outer{
+            
+            background-color: #F7F3EE; 
+        }
+
+        .polaroid-item {
+            display: block;
+            padding: 30px;
+            border-radius: 8px;
+            transform: rotate(-0.5deg);
+            transition: transform 0.3s ease;
+            position: relative;
+            transform: rotate(3deg);
+        }
+
+        .polaroid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .polaroid-owl-carousel .owl-dots {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .polaroid-owl-carousel .owl-dot {
+            display: inline-block;
+            zoom: 1;
+            padding: 5px; 
+        }
+
+        .polaroid-owl-carousel .owl-dot span {
+            width: 8px; 
+            height: 8px;
+            margin: 0 4px;
+            background: #a9a9a9; 
+            display: block;
+            transition: opacity 200ms ease;
+            border-radius: 30px;
+        }
+
+        .polaroid-owl-carousel .owl-dot.active span {
+            background: #333333; 
+            transform: scale(1.2);
+        }
+
+    .polaroid-owl-carousel .owl-nav {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -150%); 
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;  
+    }
+
+        .polaroid-owl-carousel .owl-nav button.owl-prev,
+        .polaroid-owl-carousel .owl-nav button.owl-next {
+            position: relative;
+            background: #5c6773 !important; 
+            width: 32px;
+            height: 32px;
+            line-height: 28px;
+            border-radius: 5px;  
+            color: #ffffff !important; 
+            font-size: 20px;
+            padding: 0;
+            opacity: 0.8;
+            transition: opacity 0.2s ease, background 0.2s ease;
+            outline: none;  
+        }
+
+        .polaroid-owl-carousel .owl-nav button.owl-prev:hover,
+        .polaroid-owl-carousel .owl-nav button.owl-next:hover {
+            opacity: 1;
+        }
+ 
+        .polaroid-owl-carousel .owl-nav button.owl-prev:before {
+            content: '‹';  
+            display: block;
+        }
+        .polaroid-owl-carousel .owl-nav button.owl-next:before {
+            content: '›';  
+            display: block;
+        }
+         
+        .polaroid-owl-carousel .owl-nav button.owl-prev span,
+        .polaroid-owl-carousel .owl-nav button.owl-next span {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            .polaroid-carousel-container {
+                        max-width: 100%; 
+                        margin: auto;
+                    }
+        }
+    </style>
 </head>
 
 <body>
@@ -72,7 +179,7 @@
         </div>
     </section>
 
-    <section class="text-bg-gray">
+    <section class=" bg-light-gray">
         <div class="tobler-container">
             <div class="tobler-featured-box service-featured-box">
     
@@ -98,6 +205,44 @@
     
         </div>
     </section>
+
+<section class="tobler-featured-box">
+    <div class="container polaroid-carousel-container">
+    
+    <!-- Unique Class for Owl Carousel: 'polaroid-owl-carousel' -->
+    <div class="polaroid-owl-carousel owl-carousel owl-theme">
+        
+        <!-- Slide 1 -->
+        <div class="item">
+            <div class="polaroid-item">
+                <!-- Use the uploaded image as the source -->
+                <img src="./assets/images/our-history/carousel-img1.png" 
+                     alt="Vintage boat ramp scene" 
+                     onerror="this.onerror=null; this.src='./assets/images/our-history/carousel-img1.png';">
+            </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="item">
+            <div class="polaroid-item">
+                <img src="./assets/images/our-history/carousel-img1.png" 
+                     alt="Summer day scene" 
+                     onerror="this.onerror=null; this.src='./assets/images/our-history/carousel-img1.png';">
+            </div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="item">
+            <div class="polaroid-item">
+                <img src="./assets/images/our-history/carousel-img1.png" 
+                     alt="Mountain view" 
+                     onerror="this.onerror=null; this.src='./assets/images/our-history/carousel-img1.png';">
+            </div>
+        </div>
+        
+    </div>
+</div>
+</section>
 
     <section class="fiberglass-slider-section bottom-blue-banner">
 
@@ -169,7 +314,7 @@
     </div>
     </section>
 
-<div class="tobler-container">
+    <div class="tobler-container">
         <div class="tobler-featured-box service-featured-box reverse-column">
 
             <div class="tobler-featured-col">
@@ -197,8 +342,6 @@
 
     </div>
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -215,6 +358,21 @@
     <script src="./assets/js/script.js"></script>
 
 
+
+<script>
+$(document).ready(function(){
+    $(".polaroid-owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 600
+    });
+});
+</script>
 
 </body>
 

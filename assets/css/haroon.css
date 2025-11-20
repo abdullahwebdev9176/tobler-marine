@@ -1,9 +1,4 @@
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-    background:  #357BFF !important;
-}
-.owl-theme .owl-dots .owl-dot span {
-    background: #fff;
-}
+
 @media screen and (max-width: 1700px) {
 }
 @media screen and (max-width: 1600px) {

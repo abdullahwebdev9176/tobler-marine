@@ -2180,7 +2180,9 @@ footer {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     z-index: 1;
 }
-
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background:  #357BFF !important;
+}
 .brand-slider .owl-nav {
     display: none !important;
 }
