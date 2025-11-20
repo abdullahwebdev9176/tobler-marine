@@ -16,25 +16,23 @@ $(".toggle-menu").click(function () {
 $(document).ready(function () {
     $('.custom-toggle-icon').click(function () {
 
-        var togglerIcon = $('.custom-toggle-icon');
-
-        var closeIcon = togglerIcon.find('img.close-icon');
-        var barsIcon = togglerIcon.find('img.bars-icon');
+        var togglerIcon = $(this);
+        var barsIcon = togglerIcon.find('span.fa');
 
         const $menu = $(this).closest(".mobile-header").next(".mobile-header-list");
 
         if (!$menu.hasClass('mobile-menu-show')) {
 
-            closeIcon.show();
-            barsIcon.hide();
+            barsIcon.removeClass('fa-bars').addClass('fa-close');
 
             $menu.css('display', 'block');
             setTimeout(() => {
                 $menu.addClass('mobile-menu-show');
             }, 10);
+
         } else {
-            closeIcon.hide();
-            barsIcon.show();
+
+            barsIcon.removeClass('fa-close').addClass('fa-bars');
 
             $menu.removeClass('mobile-menu-show');
             $menu.one('transitionend', function () {
@@ -44,20 +42,13 @@ $(document).ready(function () {
     });
 
 
-    var closeIcon = $('.custom-toggle-icon').find('img.close-icon');
-
-    $(closeIcon).click(function () {
-        $(this).closest(".mobile-header-list").removeClass("mobile-menu-show");
-        $(".drodown-box").find('.show-mobile-menu').removeClass("show-mobile-menu");
-    });
-
     $('.custom-close-icon').click(function () {
         $(this).closest(".mobile-header-list").removeClass("mobile-menu-show");
         $(this).closest(".drodown-box").find('.show-mobile-menu').removeClass("show-mobile-menu");
     });
 });
 
-$('.mobile-dropdown').on('click', function(){
+$('.mobile-dropdown').on('click', function () {
     $(this).find('.dropdown-list').slideToggle();
 })
 
@@ -142,16 +133,16 @@ $('.brand-slider').owlCarousel({
     }
 })
 //faq accordion on frontpage
- if ($('.custom-accordion-header').length) {
-        $(".custom-accordion-header").click(function () {
-            if ($(this).find("span.fa").hasClass("fa-angle-down")) {
-                $(".custom-accordion").find(".content-show").slideUp().removeClass("content-show");
-                $(".custom-accordion").find(".fa-angle-up").removeClass("fa-angle-up").addClass("fa-angle-down");
-                $(this).find("span.fa").removeClass("fa-angle-down").addClass("fa-angle-up");
-                $(this).next(".custom-accordion-body").slideDown().addClass("content-show");
-            } else if ($(this).find("span.fa").hasClass("fa-angle-up")) {
-                $(this).find("span.fa").removeClass("fa-angle-up").addClass("fa-angle-down");
-                $(this).next(".custom-accordion-body").slideUp().removeClass("content-show");
-            }
-        });
-    }
+if ($('.custom-accordion-header').length) {
+    $(".custom-accordion-header").click(function () {
+        if ($(this).find("span.fa").hasClass("fa-angle-down")) {
+            $(".custom-accordion").find(".content-show").slideUp().removeClass("content-show");
+            $(".custom-accordion").find(".fa-angle-up").removeClass("fa-angle-up").addClass("fa-angle-down");
+            $(this).find("span.fa").removeClass("fa-angle-down").addClass("fa-angle-up");
+            $(this).next(".custom-accordion-body").slideDown().addClass("content-show");
+        } else if ($(this).find("span.fa").hasClass("fa-angle-up")) {
+            $(this).find("span.fa").removeClass("fa-angle-up").addClass("fa-angle-down");
+            $(this).next(".custom-accordion-body").slideUp().removeClass("content-show");
+        }
+    });
+}
