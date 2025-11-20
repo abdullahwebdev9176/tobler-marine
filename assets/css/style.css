@@ -22,6 +22,11 @@
     src: url("/assets/fonts/Söhne/TestSohne-Dreiviertelfett.otf")
 }
 
+@font-face {
+    font-family: 'Söhne-regular';
+    src: url("/assets/fonts/Söhne/TestSohne-Leicht.otf")
+}
+
 :root {
     --black-color: #111;
     --white-color: #fff;
@@ -37,6 +42,7 @@
     --blue-banner-bg: #080821;
     --Text-Secondary-darker: #3A404D;
     --font-family-Body: 'Söhne';
+    --Söhne-regular: 'Söhne-regular'
 }
 
 /* Common css start here  */
@@ -598,11 +604,11 @@ ul {
 }
 
 .right-nav-box {
-    width: 15%;
+    width: 20%;
 }
 
 .centaral-nav-box {
-    width: 65%;
+    width: 60%;
 }
 
 .desktop-header .centaral-nav-link,
@@ -1317,7 +1323,7 @@ ul {
     width: 100%;
     max-width: 992px;
     height: calc(100vh - 90px);
-    background: var(--white-color);
+    background: var(--dark-blue-color);
     overflow-y: auto;
     transform: translateX(100%);
     transition: transform 0.4s ease-in-out;
@@ -1389,7 +1395,7 @@ ul {
     width: 100%;
     max-width: 992px;
     height: calc(100vh - 90px);
-    background: var(--white-color);
+    background: var(--dark-blue-color);
     overflow-y: auto;
     transform: translateX(100%);
     transition: transform 0.4s ease-in-out;
@@ -1400,31 +1406,42 @@ ul {
 }
 
 .mobile-nav-box .dropdown-header p {
-    font-family: "Bai Jamjuree";
+    color: var(--Text-Secondary-title);
+    font-family: var(--font-family-title);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.mobile-dropdown-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown-list{
+    padding-left: 0 !important;
+    margin-top: 10px;
+    display: none;
+}
+.dropdown-list li a {
+    color: var(--Text-Secondary-title, #F6F6F8);
+    font-family: var(--Söhne-regular);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    color: #009899;
-}
-
-.mobile-nav-box .dropdown-header h6 {
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    padding: 20px 0px 0px 0;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #000 !important;
 }
 
 .mobile-nav-box .dropdown-menu-link {
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
+    color: var(--Text-Secondary-title);
+    font-family: var(--font-family-title);
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 22px;
+    text-transform: uppercase;
 }
 
 .mobile-nav-box.show-mobile-menu {
@@ -1434,7 +1451,13 @@ ul {
 }
 
 .mobile-nav-box ul {
-    padding-left: 56px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.mobile-dropdown span.fa {
+    color: var(--Text-Secondary-title);
+    font-size: 25px;
 }
 
 .mobile-nav-box ul li {
@@ -1442,8 +1465,8 @@ ul {
 }
 
 .dropdown-header {
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .mobile-header-parent {
@@ -1502,13 +1525,13 @@ ul {
 }
 
 .header-bg {
-    border-bottom: 1px solid #EEE;
-    background: #FFF;
+    border-bottom: 1px solid var(--dark-blue-color);
+    background: var(--dark-blue-color);
 }
 
 .custom-toggle-icon span.fa {
     font-size: 30px;
-    color: var(--black-color);
+    color: var(--white-color);
 }
 
 .custom-nav-link {
@@ -1540,22 +1563,21 @@ ul {
 .submenu-nav-link {
     display: block;
     padding: 15px 0;
-    color: var(--black-color);
-    font-family: "Bai Jamjuree";
-    font-size: 20px;
+    color: var(--Text-Secondary-title);
+    font-family: var(--font-family-title);
+    font-size: 18px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 22px;
     text-transform: uppercase;
 }
 
 .submenu-nav-link:hover {
-    color: var(--black-color);
+    color: var(--Text-Secondary-title);
 }
 
 .dropdown-menu-link {
-    color: var(--black-color);
+    color: var(--Text-Secondary-title);
     font-family: "Bai Jamjuree";
     font-size: 16px;
     font-style: normal;
@@ -1564,7 +1586,7 @@ ul {
 }
 
 .dropdown-menu-link:hover {
-    color: var(--black-color);
+    color: var(--Text-Secondary-title);
 }
 
 .content-menu.mobile-menu-show {

@@ -34,7 +34,7 @@
                 <div class="logo-box">
                     <div class="header-logo">
                         <a href="/">
-                            <img src="./assets/images/site-logo/site-logo.png" alt="Tobler Marine">
+                            <img src="./assets/images/site-logo/site-logo.png" alt="Tobler Marina">
                         </a>
                     </div>
                 </div>
@@ -42,8 +42,9 @@
                     <div class="centaral-nav">
                         <ul>
 
-                            <li class="toggle-menu" data-title="inventory"><a id="header-sell-trade"
-                                    href="javascript:void(0)" class="centaral-nav-link">Inventory <span class="fa fa-angle-down"></span></a></li>
+                            <li class="toggle-menu" data-title="inventory"><a id="header-inventory-cta"
+                                    href="javascript:void(0)" class="centaral-nav-link">Inventory <span
+                                        class="fa fa-angle-down"></span></a></li>
 
                             <li class="toggle-menu" data-title="service">
                                 <a id="header-service-dropdown" href="javascript:void(0)"
@@ -53,22 +54,21 @@
 
                             </li>
 
-                             <li class="toggle-menu" data-title="info">
-                                <a id="header-service-dropdown" href="javascript:void(0)"
+                            <li class="toggle-menu" data-title="info">
+                                <a id="header-info-dropdown" href="javascript:void(0)"
                                     class="centaral-nav-link dropdown-link">
                                     <span>info <span class="fa fa-angle-down"></span></span>
                                 </a>
                             </li>
 
                             <li>
-                                <a id="header-service-dropdown" href="javascript:void(0)"
+                                <a id="header-events-dropdown" href="javascript:void(0)"
                                     class="centaral-nav-link dropdown-link">
                                     <span>Events</span>
                                 </a>
                             </li>
 
-                            <li class="toggle-menu position-relative" data-title="sports-marine"><a id="header-events"
-                                    href="javascript:void(0)" class="centaral-nav-link">Locations</a>
+                            <li><a id="header-locations" href="javascript:void(0)" class="centaral-nav-link">Locations</a>
                             </li>
 
                         </ul>
@@ -78,7 +78,8 @@
                     <div class="right-nav">
                         <ul>
                             <li>
-                                <a href="javascript:void(0)" class="light-blue-btn" id="header-contact-btn">Contact Us</a>
+                                <a href="javascript:void(0)" class="light-blue-btn" id="header-contact-btn">Contact
+                                    Us</a>
                             </li>
                         </ul>
                     </div>
@@ -191,21 +192,12 @@
 
 
             <div class="mobile-header-img">
-                <a href="/"><img src="./assets/images/site-logo/sports-marine-logo-2.png" alt="Sports Marine"></a>
+                <a href="/"><img src="./assets/images/site-logo/site-logo.png" alt="Tobler Marina"></a>
             </div>
 
             <div class="custom-toggle-icon">
-                <img src="./assets/images/icons/bars.svg" alt="" class="bars-icon">
-                <img src="./assets/images/icons/close.svg" alt="" class="close-icon">
+                <span class="fa fa-bars"></span>
             </div>
-        </div>
-
-        <div class="sub-header">
-            <ul>
-                <li><a href="javascript:void(0)"><span class="fa fa-search"></span>Search</a></li>
-                <li><a href="/value-trade">Sell/Trade</a></li>
-                <li><a href="/financing">Financing</a></li>
-            </ul>
         </div>
     </header>
 
@@ -216,14 +208,15 @@
             <div class="mobile-menus-box active" id="boats">
                 <ul>
 
-                    <li class="toggle-mobile-menu" data-title="expert-service"><a class="submenu-nav-link"
-                            href="javascript:void(0)">Expert Service</a></li>
                     <li class="toggle-mobile-menu" data-title="mobile-inventory"><a class="submenu-nav-link"
                             href="javascript:void(0)">Inventory</a></li>
-                    <li><a class="submenu-nav-link" href="javascript:void(0)">Financing</a></li>
-                    <li class="toggle-mobile-menu" data-title="mobile-sports-marine"><a class="submenu-nav-link"
-                            href="javascript:void(0)">More From Sports Marine</a></li>
-                    <li><a class="submenu-nav-link" href="javascript:void(0)">Contact</a></li>
+                    <li class="toggle-mobile-menu" data-title="mobile-service"><a class="submenu-nav-link"
+                            href="javascript:void(0)">Services</a></li>
+                    <li class="toggle-mobile-menu" data-title="mobile-info">
+                        <a class="submenu-nav-link" href="javascript:void(0)">Info</a>
+                    </li>
+                    <li><a class="submenu-nav-link" href="javascript:void(0)">Events</a></li>
+                    <li><a class="submenu-nav-link" href="javascript:void(0)">Locations</a></li>
 
                 </ul>
 
@@ -237,21 +230,39 @@
         <div class="mobile-nav-box" id="mobile-inventory">
 
             <div class="dropdown-header">
-                <p class="custom-close-icon"><span class="fa fa-angle-left"></span>&nbsp; Main Menu</p>
-                <h6>Boat Sales</h6>
+                <p class="custom-close-icon"><span class="fa fa-angle-left"></span>&nbsp; Inventory</p>
+                
             </div>
             <ul>
 
-                <li><a class="dropdown-menu-link" href="/events">All Inventory</a></li>
-                <li><a class="dropdown-menu-link" href="/events">New Boats</a></li>
-                <li><a class="dropdown-menu-link" href="/events">Pre-Owned Boats</a></li>
-                <li><a class="dropdown-menu-link" href="/events">Promotional</a></li>
-                <li><a class="dropdown-menu-link" href="/events">Trailer Sales</a></li>
-                <li><a class="dropdown-menu-link" href="/events">Consign/Trade Your Boat</a></li>
+                <li class="mobile-dropdown">
+                    <div class="mobile-dropdown-link">
+                        <a class="dropdown-menu-link" href="javascript:void(0)">BOATS</a>
+                        <span class="fa fa-angle-down"></span>
+                    </div>
+
+                     <ul class="dropdown-list">
+                        <li><a href="">New Boats</a></li>
+                        <li><a href="">Pre-Owned Boats</a></li>
+                        <li><a href="">View All</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                   <div class="mobile-dropdown-link">
+                        <a class="dropdown-menu-link" href="javascript:void(0)">eFoils</a>
+                        <span class="fa fa-angle-down"></span>
+                   </div>
+
+                    <ul class="dropdown-list">
+                        <li><a href="">New eFoils</a></li>
+                        <li><a href="">Pre-Owned eFoils</a></li>
+                        <li><a href="">View All</a></li>
+                    </ul>
+                </li>
 
             </ul>
             <div>
-                
+
             </div>
 
             <div class="menu-logo-box">
@@ -323,7 +334,7 @@
             </div> -->
         </div>
 
-        <div class="mobile-nav-box" id="expert-service">
+        <div class="mobile-nav-box" id="mobile-service">
             <div class="dropdown-header">
                 <p class="custom-close-icon"><span class="fa fa-angle-left"></span>&nbsp; Main Menu</p>
                 <h6>Service</h6>
@@ -335,7 +346,7 @@
             </ul>
         </div>
 
-        <div class="mobile-nav-box" id="mobile-sports-marine">
+        <div class="mobile-nav-box" id="mobile-info">
             <div class="dropdown-header">
                 <p class="custom-close-icon"><span class="fa fa-angle-left"></span>&nbsp; Main Menu</p>
                 <h6>More</h6>

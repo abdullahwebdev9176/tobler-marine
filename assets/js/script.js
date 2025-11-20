@@ -57,6 +57,10 @@ $(document).ready(function () {
     });
 });
 
+$('.mobile-dropdown').on('click', function(){
+    $(this).find('.dropdown-list').slideToggle();
+})
+
 $('.toggle-mobile-menu').on('click', function () {
     var menuTitle = $(this).attr("data-title");
     var $menu = $("#" + menuTitle);
