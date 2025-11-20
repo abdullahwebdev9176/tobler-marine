@@ -1420,11 +1420,13 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
-.dropdown-list{
+
+.dropdown-list {
     padding-left: 0 !important;
     margin-top: 10px;
     display: none;
 }
+
 .dropdown-list li a {
     color: var(--Text-Secondary-title, #F6F6F8);
     font-family: var(--Söhne-regular);
@@ -2180,9 +2182,12 @@ footer {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     z-index: 1;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-    background:  #357BFF !important;
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #357BFF !important;
 }
+
 .brand-slider .owl-nav {
     display: none !important;
 }
@@ -2852,6 +2857,10 @@ footer {
         padding: 120px 32px;
     }
 
+    .newsletter {
+        padding: 120px 32px;
+    }
+
     .accordion-sec {
         padding: 120px 32px;
     }
@@ -2872,6 +2881,14 @@ footer {
     }
 
     /* common css ends here */
+
+    .footer-col-2 {
+        width: 40%;
+    }
+
+    .footer-col-1 {
+        width: 60%;
+    }
 
     /* fiberglass css start here */
 
@@ -2961,6 +2978,10 @@ footer {
         padding: 72px 32px;
     }
 
+    .newsletter {
+        padding: 72px 32px;
+    }
+
     .form-sec {
         padding: 72px 32px;
     }
@@ -3004,6 +3025,14 @@ footer {
     }
 
     /* common css start here */
+    .footer-box {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footer-col-1 {
+        gap: 20px;
+    }
 
     .number-box-item h4 {
         font-size: 60px;
@@ -3184,11 +3213,28 @@ footer {
 
     /* common css start here */
 
+    /* footer css start here */
+
+    .footer-grid {
+        flex-wrap: wrap;
+    }
+
+    .footer-col-2,
+    .footer-col-1 {
+        width: 100%;
+    }
+
+    .company-info
     /* fiberglass css start here */
 
     .fiberglass-slider-section-header {
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .newsletter h2 {
+        font-size: 35px;
+        line-height: 43px;
     }
 
     /* fiberglass css ends here */
@@ -3377,6 +3423,16 @@ footer {
 
     /* common css ends here */
 
+    .footer-column {
+        width: calc(100% / 2);
+        margin-bottom: 48px;
+    }
+
+    .footer-col-1 {
+        flex-wrap: wrap;
+        gap: unset;
+    }
+
     /* consignment css start here */
 
     .consigning-banner-title {
@@ -3504,6 +3560,24 @@ footer {
     }
 
     /* form css ends here */
+
+    /*  footer css start here */
+    .newsletter h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .newsletter-form {
+        flex-wrap: wrap;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
 
     /* staff page css start here */
 
