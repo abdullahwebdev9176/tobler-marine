@@ -2400,6 +2400,39 @@ footer {
 }
 
 /* --------------------------canvas page --------------------------------- */
+.desired-service-radio input[type="checkbox"] {
+appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: var(--white);
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+}
+
+.desired-service-radio input[type="checkbox"]:checked {
+    background-color: yellow;
+}
+.desired-service-radio input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+.desired-service-radio input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 6px;
+    height: 12px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
 .feature-icon-circle {
     width: 60px;
     height: 60px;
@@ -2882,6 +2915,150 @@ footer {
     font-weight: 300;
     line-height: 28px;
 }
+
+
+
+/* staff page css start here */
+
+    .prostaffpartners .card {
+        min-height: 200px;
+    }
+.staffpositions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #586173;
+  border-top: 1px solid #586173;
+  padding: 0.5rem 0;
+}
+.staffpositions h3 {
+  color: #0f0f31;
+  text-align: right;
+  font-family: Söhne;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.staffpositions p {
+  color: #586173;
+  font-family: Figtree;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+/* ----------history -------- */
+.polaroid-carousel-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.polaroid-carousel-container .owl-stage-outer {
+  background-color: #f7f3ee;
+}
+
+.polaroid-item {
+  display: block;
+  padding: 30px;
+  border-radius: 8px;
+  transform: rotate(-0.5deg);
+  transition: transform 0.3s ease;
+  position: relative;
+  transform: rotate(3deg);
+  padding-top: 70%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.polaroid-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+.polaroid-owl-carousel .owl-dots {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.polaroid-owl-carousel .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  padding: 5px;
+}
+
+.polaroid-owl-carousel .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  background: #a9a9a9;
+  display: block;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+
+.polaroid-owl-carousel .owl-dot.active span {
+  background: #333333;
+  transform: scale(1.2);
+}
+
+.polaroid-owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.polaroid-owl-carousel .owl-nav button.owl-prev,
+.polaroid-owl-carousel .owl-nav button.owl-next {
+  position: relative;
+  background: #5c6773 !important;
+  width: 32px;
+  height: 32px;
+  line-height: 28px;
+  border-radius: 5px;
+  color: #ffffff !important;
+  font-size: 20px;
+  padding: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  outline: none;
+}
+
+.polaroid-owl-carousel .owl-nav button.owl-prev:hover,
+.polaroid-owl-carousel .owl-nav button.owl-next:hover {
+  opacity: 1;
+}
+
+.polaroid-owl-carousel .owl-nav button.owl-prev:before {
+  content: "‹";
+  display: block;
+}
+
+.polaroid-owl-carousel .owl-nav button.owl-next:before {
+  content: "›";
+  display: block;
+}
+
+.polaroid-owl-carousel .owl-nav button.owl-prev span,
+.polaroid-owl-carousel .owl-nav button.owl-next span {
+  display: none;
+}
+
+    /* staff page css ends here */
 
 @media screen and (max-width: 1650px) {
 
@@ -3707,139 +3884,6 @@ footer {
         width: 100%;
     }
 
-    /* staff page css start here */
-
-    .prostaffpartners .card {
-        min-height: 200px;
-    }
-.staffpositions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #586173;
-  border-top: 1px solid #586173;
-  padding: 0.5rem 0;
-}
-.staffpositions h3 {
-  color: #0f0f31;
-  text-align: right;
-  font-family: Söhne;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-}
-.staffpositions p {
-  color: #586173;
-  font-family: Figtree;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 18px;
-}
-
-/* ----------history -------- */
-.polaroid-carousel-container {
-  max-width: 600px;
-  margin: auto;
-}
-
-.polaroid-carousel-container .owl-stage-outer {
-  background-color: #f7f3ee;
-}
-
-.polaroid-item {
-  display: block;
-  padding: 30px;
-  border-radius: 8px;
-  transform: rotate(-0.5deg);
-  transition: transform 0.3s ease;
-  position: relative;
-  transform: rotate(3deg);
-}
-
-.polaroid-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-}
-
-.polaroid-owl-carousel .owl-dots {
-  text-align: center;
-  padding-top: 30px;
-}
-
-.polaroid-owl-carousel .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  padding: 5px;
-}
-
-.polaroid-owl-carousel .owl-dot span {
-  width: 8px;
-  height: 8px;
-  margin: 0 4px;
-  background: #a9a9a9;
-  display: block;
-  transition: opacity 200ms ease;
-  border-radius: 30px;
-}
-
-.polaroid-owl-carousel .owl-dot.active span {
-  background: #333333;
-  transform: scale(1.2);
-}
-
-.polaroid-owl-carousel .owl-nav {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -150%);
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 10px;
-}
-
-.polaroid-owl-carousel .owl-nav button.owl-prev,
-.polaroid-owl-carousel .owl-nav button.owl-next {
-  position: relative;
-  background: #5c6773 !important;
-  width: 32px;
-  height: 32px;
-  line-height: 28px;
-  border-radius: 5px;
-  color: #ffffff !important;
-  font-size: 20px;
-  padding: 0;
-  opacity: 0.8;
-  transition: opacity 0.2s ease, background 0.2s ease;
-  outline: none;
-}
-
-.polaroid-owl-carousel .owl-nav button.owl-prev:hover,
-.polaroid-owl-carousel .owl-nav button.owl-next:hover {
-  opacity: 1;
-}
-
-.polaroid-owl-carousel .owl-nav button.owl-prev:before {
-  content: "‹";
-  display: block;
-}
-
-.polaroid-owl-carousel .owl-nav button.owl-next:before {
-  content: "›";
-  display: block;
-}
-
-.polaroid-owl-carousel .owl-nav button.owl-prev span,
-.polaroid-owl-carousel .owl-nav button.owl-next span {
-  display: none;
-}
-
-    /* staff page css ends here */
 
 
     .banner-content-box {
