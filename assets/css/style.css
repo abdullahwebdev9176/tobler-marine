@@ -2171,6 +2171,7 @@ footer {
     position: relative;
     padding-top: 45%;
 }
+
 .fiber-glass-slider .item {
     position: relative;
     padding-top: 66% !important;
@@ -2317,12 +2318,13 @@ footer {
     font-weight: 700;
     line-height: 28px;
 }
-.restoration-img{
+
+.restoration-img {
     position: relative;
     padding-top: 66%;
 }
 
-.restoration-img img{
+.restoration-img img {
     position: absolute;
     top: 0;
     left: 0;
@@ -2330,6 +2332,7 @@ footer {
     height: 100%;
     object-fit: cover;
 }
+
 /* --------------------------canvas page --------------------------------- */
 .feature-icon-circle {
     width: 60px;
@@ -3089,8 +3092,9 @@ footer {
     .storage-featured-box {
         flex-wrap: wrap;
     }
-    .storage-featured-box  .fearured-rich-text{
-            margin: 20px 0 0 0;
+
+    .storage-featured-box .fearured-rich-text {
+        margin: 20px 0 0 0;
     }
 
     .storage-featured-co-1,
@@ -3477,6 +3481,15 @@ footer {
 
     /* form css ends here */
 
+    /* staff page css start here */
+
+    .prostaffpartners .card {
+        min-height: 200px;
+    }
+
+    /* staff page css ends here */
+
+
     .banner-content-box {
         max-width: 100%;
         padding-left: 25px;
@@ -3534,6 +3547,13 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+    /* staff page css start here */
+
+    .prostaffpartners .card {
+        min-height: 150px;
+    }
+
+    /* staff page css ends here */
     .brand-logo-item {
         padding: 30px;
         height: 120px;
