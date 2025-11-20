@@ -2015,7 +2015,7 @@ footer {
 }
 
 .home-dotted-text {
-    color: var(--light-blue-color);
+    color: var(--light-blue-color) !important;
     text-align: center;
     font-family: Figtree;
     font-size: 20px;
@@ -2084,28 +2084,35 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .lg-card-col {
     width: calc(100% / 3 - 10px);
 }
 
-.hm_serviceBox,
-.servc_img {
-    height: 100%;
+.lg-card-col a {
+    display: block;
 }
 
-.servc_img>img {
+.hm_serviceBox {
+    position: relative;
+}
+
+.servc_img {
+    position: relative;
+    padding-top: 125%;
+}
+
+.servc_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.hm_serviceBox,
-.servc_img {
-    height: 100%;
-    position: relative;
-}
 
 .hms_title {
     position: absolute;
@@ -2155,7 +2162,7 @@ footer {
     height: 130px;
     background: white;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    z-index: 0;
+    z-index: 1;
 }
 
 .brand-slider .owl-nav {
@@ -2195,6 +2202,9 @@ footer {
     height: 257px;
     width: calc(100% / 4 - 20px);
     background: var(--white-color);
+    box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.05);
+    border: 2px solid #D6DAE3;
+    border-radius: var(--border-radius);
 }
 
 .brand-logo-item img {
@@ -2985,7 +2995,6 @@ footer {
 
     .lg-card-col {
         width: calc(100% / 2 - 10px);
-        margin-bottom: 20px;
     }
 
     .lg-card-row {
@@ -3046,6 +3055,7 @@ footer {
     .light-blue-btn {
         font-size: 12px;
         padding: 15px 15px;
+        letter-spacing: 1px;
     }
 
     .home-section-title-heading {
@@ -3071,9 +3081,38 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+    .banner-content-box {
+        max-width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .home-dotted-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .number-box-item p {
+        font-size: 18px;
+    }
+
+    .home-blue-banner-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .lg-card-col {
+        width: 100%;
+    }
+
     .number-box-item {
         width: 100%;
         margin-bottom: 35px;
+    }
+
+    .number-box-item h4 {
+        font-size: 64px;
+        line-height: 64px;
     }
 
     .brand-logo-item {
